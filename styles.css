@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 26px;
-    color: black;
+    color: grey;
     text-transform: uppercase;
     animation: change-background 10s ease-in-out infinite;
 }
