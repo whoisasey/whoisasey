@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+    animation: change-background 15s ease-in-out infinite;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 60px;
+    line-height: 50px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+i {
+    font-size: 50px;
+}
+
+
+.hidden {
+    display: none;
+}
+.player i {
+    font-size: 24px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.player span {
+    border-bottom: 1px solid #333 ;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+.comingSoon {
+    color: white;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@keyframes change-background {
+    0% {
+    background: lightyellow;
+    }
+    25% {
+        background: lightpink;
+    }
+    50% {
+    background: lightblue;
+    }
+    75% {
+        background: lightgreen;
+    }
+    100% {
+    background: lightyellow;
+    }
+}

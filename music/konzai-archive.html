@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>whoisasey.com</title>
+</head>
+
+<body>
+    <header>
+
+    <div class="navbar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+
+        <a href="../index.html">Home</a>
+        <a href="#">About</a>
+
+        <div class="subnav">
+            <button class="subnavbtn">
+                <a href="#">Music <i class="fa fa-caret-down"></i></a>
+                </button>
+            <div class="subnav-content">
+            <a href="#">The KONZAI Show Archive</a>
+            <a href="guest-mixes.html">Mixes</a>
+            <a href="#">Clients</a>
+            </div>
+        </div>
+        <!-- <div class="subnav">
+            <button class="subnavbtn"> -->
+                <a href="#" class="comingSoon">Web 
+                    <!-- <i class="fa fa-caret-down"></i> -->
+                </a>
+                <!-- </button>
+            <div class="subnav-content">
+            <a href="#">Project </a>
+            <a href="#">Project</a>
+            <a href="#">Project</a>
+            <a href="#">Project</a>
+            </div> -->
+        <!-- </div> -->
+
+        <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+
+<section id="main">
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    
+    <div class="wrapper">
+        <div class="player">
+            <p>The KONZAI Show is my biweekly radio show that airs exclusively on <span><a href="https://www.isoradio.to/"> ISO Radio</a></span> every other Thursday at 5PM EST
+            </p>
+            <h3>Latest Show</h3>
+            <p>Thursday, May 28, 2020</p>
+            <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FISORadio%2Fkonzai-with-asey-28th-may-2020%2F" frameborder="0" ></iframe>
+            <p><a href="https://www.dropbox.com/s/ha4plogymfhony7/konzai%205-28.pdf?dl=0">TRACKLIST</a></p>
+        </div>
+
+
+        <select id="dropDown" class="select-css">
+            <option selected disabled hidden>Search by Date</option>
+            <option value="div1">May 14</option>
+            <option value="div2">April 30</option>
+            <option value="div3">April 16</option>
+
+        </select>
+
+        <!-- drop down May 14 -->
+        <div id="div1" class="drop-down-show-hide">
+            <p>Thursday, May 14, 2020</p>
+            <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FISORadio%2Fkonzai-with-asey-14th-may-2020%2F" frameborder="0" ></iframe>
+            <p><a href="https://www.dropbox.com/s/ha4plogymfhony7/konzai%205-28.pdf?dl=0">TRACKLIST</a></p>
+        </div>
+
+        <!-- drop down April 30 -->
+        <div id="div2" class="drop-down-show-hide">
+            <p>Thursday, April 30, 2020</p>
+            <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FISORadio%2Fkonzai-with-asey-30th-april-2020%2F" frameborder="0" ></iframe>
+            <p><a href="#">TRACKLIST</a></p>
+        </div>
+
+        <!-- drop down April 16 -->
+        <div id="div3" class="drop-down-show-hide">
+            <p>Thursday, April 16, 2020</p>
+            <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FISORadio%2Fkonzai-with-asey-16th-april-2020%2F" frameborder="0" ></iframe>
+            <p><a href="#">TRACKLIST</a></p>
+        </div>
+
+
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>

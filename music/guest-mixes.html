@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>whoisasey.com</title>
+</head>
+
+<body>
+    <header>
+
+    <div class="navbar">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+
+            <a href="../index.html">Home</a>
+            <a href="#">About</a>
+
+        <div class="subnav">
+            <button class="subnavbtn">
+                <a href="#">Music <i class="fa fa-caret-down"></i></a>
+                </button>
+            <div class="subnav-content">
+            <a href="../music/konzai-archive.html">The KONZAI Show Archive</a>
+            <a href="#">Mixes</a>
+            <a href="#">Clients</a>
+            </div>
+        </div>
+        <!-- <div class="subnav">
+            <button class="subnavbtn"> -->
+                <a href="#" class="comingSoon">Web 
+                    <!-- <i class="fa fa-caret-down"></i> -->
+                </a>
+                <!-- </button>
+            <div class="subnav-content">
+            <a href="#">Project </a>
+            <a href="#">Project</a>
+            <a href="#">Project</a>
+            <a href="#">Project</a>
+            </div> -->
+        <!-- </div> -->
+
+        <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+
+<section id="main">
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    
+    <div class="wrapper">
+        <div class="player">
+            <h3>Latest Show</h3>
+            <p>Rinse FM Guest Mix for God Bless Chennessy 
+                <a href="https://www.instagram.com/godblesschennessy/"><i class="fab fa-instagram"></i></a></p>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/828187732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rinsefm" title="Rinse FM" target="_blank" style="color: #cccccc; text-decoration: none;">Rinse FM</a> · <a href="https://soundcloud.com/rinsefm/chennessy250520" title="God Bless Chennessy with Asey - 25 May 2020" target="_blank" style="color: #cccccc; text-decoration: none;">God Bless Chennessy with Asey - 25 May 2020</a></div>
+            <p><a href="#">Tracklist</a></p>        
+        </div>
+
+
+        <select id="dropDown" class="select-css">
+            <option selected disabled hidden>See More</option>
+            <option value="div1">Transmission with Esky (UK)</option>
+            <option value="div2">Halfmoon BK (NY)</option>
+            <option value="div3">N10.as (MTL)</option>
+
+        </select>
+
+        <!-- esky -->
+        <div id="div1" class="drop-down-show-hide">
+            <div class="player">
+                <p>Transission with Esky
+                    <a href="https://www.instagram.com/eskybeat/"><i class="fab fa-instagram"></i></a></p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/829019770&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/eskybeat" title="Esk" target="_blank" style="color: #cccccc; text-decoration: none;">Esk</a> · <a href="https://soundcloud.com/eskybeat/04am38" title="Four in the AM #38 w/ Esk &amp; Asey" target="_blank" style="color: #cccccc; text-decoration: none;">Four in the AM #38 w/ Esk &amp; Asey</a></div>            
+                <p><a href="#">Tracklist</a></p>
+            </div>
+        </div>
+
+        <!-- halfmoon BK -->
+        <div id="div2" class="drop-down-show-hide">
+            <div class="player">
+                <p>Halfmoon BK
+                    <a href="https://www.instagram.com/halfmoonbk/"><i class="fab fa-instagram"></i></a></p>
+                    <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2FHalfMoonbk%2Fdj-asey-1042019%2F" frameborder="0" ></iframe>
+            </div>
+        </div>
+
+        <!-- N10.as -->
+        <div id="div3" class="drop-down-show-hide">
+            <div class="player">
+                <p>N10.as
+                    <a href="https://www.instagram.com/n10.as/"><i class="fab fa-instagram"></i></a></p>
+                    <iframe width="80%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fn10as%2F07_18_2019_aseymp3%2F" frameborder="0" ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>

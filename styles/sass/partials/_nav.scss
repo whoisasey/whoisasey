@@ -1,40 +1,3 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    color: black;
-    text-transform: uppercase;
-    animation: change-background 15s ease-in-out infinite;
-}
-
-h1 {
-    font-size: 100px;
-    line-height: 80px;
-}
-
-h2 {
-    font-size: 60px;
-    line-height: 50px;
-}
-
-h3 {
-    font-size: 40px;
-}
-
-i.fa-instagram {
-    font-size: 50px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: whitesmoke;
-}
-
-.comingSoon {
-    color: white;
-}
 
 /* The navigation menu */
 .navbar {
@@ -110,6 +73,10 @@ a:hover {
     color: white;
     text-decoration: none;
   }
+
+  .subnav-content a:hover {
+    color: grey;
+  }
   /* When you move the mouse over the subnav container, open the subnav content */
   .subnav:hover .subnav-content {
     display: block;
@@ -119,21 +86,3 @@ a:hover {
     transition: margin-left .5s;
     padding: 16px;
     }
-
-@keyframes change-background {
-    0% {
-    background: lightyellow;
-    }
-    25% {
-        background: lightpink;
-    }
-    50% {
-    background: lightblue;
-    }
-    75% {
-        background: lightgreen;
-    }
-    100% {
-    background: lightyellow;
-    }
-}

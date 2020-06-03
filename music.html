@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css">
-    
+    <link rel="stylesheet" href="styles.css">
 
     <title>whoisasey.com</title>
 </head>
 
 <body>
     <header>
+
+        <!-- <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+
+            <a href="music.html">Music</a>
+            <a href="#" class="coming-soon">Web</a>
+            <a href="#">Contact</a>
+        </div> -->
 
     <div class="navbar">
         <div id="mySidenav" class="sidenav">
@@ -26,8 +35,8 @@
                 <a href="#">Music <i class="fa fa-caret-down"></i></a>
                 </button>
             <div class="subnav-content">
-            <a href="./music/konzai-archive.html">The KONZAI Show Archive</a>
-            <a href="./music/guest-mixes.html">Mixes</a>
+            <a href="#">The KONZAI Show Archive</a>
+            <a href="#">Mixes</a>
             <a href="#">Clients</a>
             </div>
         </div>
@@ -36,7 +45,6 @@
                 <a href="#" class="comingSoon">Web 
                     <!-- <i class="fa fa-caret-down"></i> -->
                 </a>
-                <!-- <a href="#" class="web hidden">Web</a> -->
                 <!-- </button>
             <div class="subnav-content">
             <a href="#">Project </a>
@@ -52,18 +60,33 @@
 <section id="main">
 
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-    <div class="wrapper">
+    
     <!-- <div class="content"> -->
-        <h1>who is asey?</h1>
-        <h2>atina is a web developer and DJ based in Toronto, Canada</h2>
-        <h3>full website coming soon</h3>
-        <a href="https://www.instagram.com/whoisasey/"><i class="fab fa-instagram"></i></a>
+        
         <!-- </div> -->
-        </div>
+        
     </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="index.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+
+        $(function() {
+            let textChange = $("a.comingSoon");
+            const newText = `Coming Soon`;
+            $(textChange).hover(function(){
+                $(this).replaceWith(newText).addClass('comingSoon');
+                console.log(newText);
+            });
+        });
+        </script>
 </body>
 
 </html>
