@@ -430,6 +430,10 @@ p {
   background-image: url("../images/quay.jpeg");
 }
 
+.wheezy {
+  background-image: url("../images/wheezy.jpeg");
+}
+
 @media (max-width: 600px) {
   .wrapper {
     width: 80%;
