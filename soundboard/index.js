@@ -1,115 +1,98 @@
-//OPTION 2 - SHOWING RANDOM 9 ELEMENTS OUT OF SELECTION
 const content = [
     {
         name: `southside`,
         producer: `Southside`,
         audio: './audio/southside.mp3',
-        image: './images/southSide.jpeg',
         audioClass: "p1"
     },
     {
         name: "bangladesh",
         producer: `Bangladesh`,
         audio: './audio/bangladesh.mp3',
-        image: './images/bangladesh.jpeg',
         audioClass: "p2"
     },
     {
         name: "charlieHeat",
         producer: `Charlie Heat`,
         audio: './audio/charlieHeat.mp3',
-        image: './images/charlieHeat.jpeg',
         audioClass: 'p3',
     },
     {
         name: "metroBoomin",
         producer: `Metro Boomin`,
         audio: './audio/metro-2.mp3',
-        image: './images/metroBoomin.jpeg',
         audioClass: "p9"
     },
     {
         name: "murdaBeatz",
         producer: `Murda Beatz`,
         audio: './audio/murda.mp3',
-        image: './images/murdaBeatz.jpeg',
         audioClass: 'p4',
     },
     {
         name: "daytrip",
         producer: `Take A Day Trip`,
         audio: './audio/daytrip.mp3',
-        image: './images/daytrip.jpeg',
         audioClass: 'p5',
     },
     {
         name: "drummaBoy",
         producer: `Drumma Boy`,
         audio: './audio/drummaBoy.mp3',
-        image: './images/drummaBoy.jpeg',
         audioClass: 'p6',
     },
     {
         name: "mikeWill",
         producer: `Mike WiLL Made It`,
         audio: './audio/mikeWill.mp3',
-        image: './images/mikeWill.jpeg',
         audioClass: 'p7',
     },
     {
         name: "djMustard",
         producer: `DJ Mustard`,
         audio: './audio/mustard.mp3',
-        image: './images/djMustard.png',
         audioClass: 'p8',
     },
     {
         name: "donCannon",
         producer: `Don Cannon`,
         audio: './audio/cannon.mp3',
-        image: './images/donCannon.jpeg',
         audioClass: 'p10',
     },
     {
         name: "justBlaze",
         producer: `Just Blaze`,
         audio: './audio/justBlaze.mp3',
-        image: './images/justBlaze.jpeg',
         audioClass: 'p11',
     },
     {
         name: "davidBanner",
         producer: `David Banner`,
         audio: './audio/davidBanner.mp3',
-        image: './images/davidBanner.png',
         audioClass: 'p12',
     },
     {
         name: "tayKeith",
         producer: `Tay Keith`,
         audio: './audio/tayKeith.mp3',
-        image: './images/tayKeith.jpeg',
         audioClass: 'p13',
     },
     {
         name: "sonnyDigital",
         producer: `Sonny Digital`,
         audio: './audio/sonnyDigital.mp3',
-        image: './images/sonnyDigital.jpeg',
         audioClass: 'p14',
     },
     {
         name: "youngChop",
         producer: `Young Chop`,
         audio: './audio/youngChop.mp3',
-        image: './images/youngChop.jpeg',
         audioClass: 'p15',
     },
     {
         name: "harryFraud",
         producer: `Harry Fraud`,
         audio: './audio/harryFraud.mp3',
-        image: './images/harryFraud.jpeg',
         audioClass: 'p16',
     },
     {
@@ -130,43 +113,43 @@ const content = [
         name: "jahlilBeats",
         producer: `Jahlil Beats`,
         audio: './audio/jahlilBeats.mp3',
-        image: './images/jahlilBeats.jpg',
         audioClass: 'p19',
     },
     {
         name: "londonOnDaTrack",
         producer: `London On Da Track`,
         audio: './audio/londonOnDaTrack.mp3',
-        image: './images/londonOnDaTrack.jpeg',
         audioClass: 'p20',
     },
     {
         name: "maalyRaw",
         producer: `Maaly Raw`,
         audio: './audio/maalyRaw.mp3',
-        image: './images/maalyRaw.jpeg',
         audioClass: 'p21',
     },
     {
         name: "nitti",
         producer: `Nitti`,
         audio: './audio/nitti.mp3',
-        image: './images/nitti.jpeg',
         audioClass: 'p22',
     },
     {
         name: "pierreBourne",
         producer: `Yo Pierre`,
         audio: './audio/pierreBourne.mp3',
-        image: './images/pierreBourne.jpeg',
         audioClass: 'p23',
     },
     {
         name: "quay",
         producer: `Quay Global`,
         audio: './audio/quay.mp3',
-        image: './images/quay.jpeg',
         audioClass: 'p24',
+    },
+    {
+        name: "wheezy",
+        producer: `Wheezy Outta Here`,
+        audio: './audio/wheezy.mp3',
+        audioClass: 'p25',
     },
 ];
 
@@ -181,7 +164,7 @@ content.init = () => {
         block.position = getRandomInt(25);
     });
 
-    //sort our array based on "position" value
+    //sort our array based on random "position" value
     content.sort(function(a, b) {
         return a.position - b.position
     });
@@ -199,10 +182,11 @@ content.init = () => {
         `);
     });
 
+
     $('li').on('click', function() {
         const audio =  $(this).next()[0];
         audio.play();
-        
+        //shoutout Sherry for helping me with this
     })
 }
 
@@ -210,26 +194,3 @@ $(function() {
     content.init();
     
 });
-
-
-// END OPTION 2 - TURN THIS OFF/ON TO ACTIVATE
-// $(function() {
-
-//     // OPTION 1 - SHOWING 16 ELEMENTS AT ONCE
-
-//     // // //randomize divs on page load
-//     // var parent = $(".container");
-//     // var divs = parent.children();
-//     // //loop will run as long as the divs run for the length of the number of divs
-//     // while (divs.length) {
-//     //     // console.log(divs.length)
-//     //     //append items on the container that are removed and readded in a randomized order
-//     //     parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-//     // };
-//     // // //credit: https://jsfiddle.net/C6LPY/2/
-
-//     // END OPTION 1
-
-
-
-// });
