@@ -10,8 +10,8 @@ function closeNav() {
 
 const newFunction = function() {
     const newText = `Coming Soon`;
-    $('a.comingSoon').hover(function() {
-        $(this).html(newText).toggleClass('comingSoon');
+    $('a.coming-soon').hover(function() {
+        $(this).html(newText).toggleClass('coming-soon');
         console.log(newText);
     })
 };
