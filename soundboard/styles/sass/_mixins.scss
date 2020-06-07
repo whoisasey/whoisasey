@@ -4,11 +4,6 @@
     font-weight: bold;
     }
 
-@mixin grid {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    }
 
 @mixin bg($url) {
     background-image: url($url);

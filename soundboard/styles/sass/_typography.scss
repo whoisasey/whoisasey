@@ -3,10 +3,6 @@ $accent: #2c2c2c;
 $secondary: white;
 $primary: #000;
 
-// $primary: #85c7f2;
-// $secondary: #dbdbdb;
-// $accent: #4c4c4c;
-
 body {
     background-color: whitesmoke; 
     text-align: center;
@@ -16,7 +12,7 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
-    // margin: 0;
+    margin: 10px 0;
 }
 
 h2 {
@@ -27,5 +23,10 @@ p {
     color: $primary;
     @include font(14);   
     text-transform: uppercase;
+}
 
+span {
+    color: $primary;
+    @include font(10);   
+    text-transform: uppercase;
 }
