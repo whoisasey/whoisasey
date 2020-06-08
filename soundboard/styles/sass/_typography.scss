@@ -25,8 +25,9 @@ p {
     text-transform: uppercase;
 }
 
-span {
+span, a {
     color: $primary;
     @include font(10);   
     text-transform: uppercase;
+    text-decoration: underline;
 }

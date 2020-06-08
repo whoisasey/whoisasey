@@ -150,6 +150,37 @@ const content = [
         audio: './audio/wheezy.mp3',
         audioClass: 'p25',
     },
+    {
+        name: "jetson",
+        producer: `Jetson`,
+        audio: './audio/jetson.mp3',
+        audioClass: 'p26',
+    },
+    {
+        name: "thaBizness",
+        producer: `Tha Bizness`,
+        audio: './audio/thaBizness.mp3',
+        audioClass: 'p27',
+    },
+    {
+        name: "dunDeal",
+        producer: `Dun Deal`,
+        audio: './audio/dunDeal.mp3',
+        audioClass: 'p28',
+    },
+    {
+        name: "djSpinz",
+        producer: `DJ Spinz`,
+        audio: './audio/cutItUp.mp3',
+        audioClass: 'p29',
+    },
+    {
+        name: "zaytoven",
+        producer: `Zaytoven`,
+        audio: './audio/zaytoven.mp3',
+        audioClass: 'p30',
+    },
+    
 ];
 
 content.init = () => {
