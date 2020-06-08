@@ -12,7 +12,7 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
-    margin-top: 10px;
+    margin-top: 5px;
     margin: 0;
 }
 
@@ -22,15 +22,16 @@ h2 {
 
 p {
     color: $primary;
-    @include font(14);   
+    @include font(16);   
     text-transform: uppercase;
 }
 
 span, a {
     color: $primary;
-    @include font(10);   
+    @include font(12);   
     text-transform: uppercase;
+}
+
+a {
     text-decoration: underline;
-    margin: 0;
-    padding: 0;
 }

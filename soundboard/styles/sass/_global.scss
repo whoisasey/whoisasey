@@ -33,7 +33,7 @@ header {
 }
 
 .gridItem {
-    margin: 20px;
+    margin: 17px;
     border-radius: 50%;
     background-size: contain;
     filter: grayscale(70%); 
@@ -61,6 +61,8 @@ header {
 .button {
     margin: 5px auto;
     padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
     
     &:hover, &:focus-within {
         box-shadow: 0px 0px 25px 10px rgb(44,44,44);
