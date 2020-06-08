@@ -12,7 +12,8 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin: 0;
 }
 
 h2 {
@@ -30,4 +31,6 @@ span, a {
     @include font(10);   
     text-transform: uppercase;
     text-decoration: underline;
+    margin: 0;
+    padding: 0;
 }
