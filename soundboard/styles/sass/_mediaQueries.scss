@@ -17,3 +17,11 @@
 		display: flex;
 	}
 }
+
+@media (max-width: 380px) {
+	.container {
+	grid-template-columns: repeat(2, 180px);
+	grid-template-rows: repeat(3, 180px);
+	}
+
+}

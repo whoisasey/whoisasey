@@ -237,6 +237,7 @@ html {
 
 img {
   width: 100%;
+  display: block;
 }
 
 * {
@@ -411,5 +412,14 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    -ms-grid-columns: (180px)[2];
+        grid-template-columns: repeat(2, 180px);
+    -ms-grid-rows: (180px)[3];
+        grid-template-rows: repeat(3, 180px);
   }
 }
