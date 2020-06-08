@@ -237,7 +237,6 @@ html {
 
 img {
   width: 100%;
-  display: block;
 }
 
 * {
@@ -344,6 +343,8 @@ header {
 .gridItem {
   margin: 17px;
   border-radius: 50%;
+  position: relative;
+  overflow: hidden;
   background-size: contain;
   -webkit-filter: grayscale(70%);
           filter: grayscale(70%);
@@ -368,6 +369,11 @@ header {
 .gridItem h2 {
   color: white;
   text-shadow: 5px 5px 5px #2c2c2c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .button {
@@ -385,126 +391,6 @@ header {
 .button:hover, .button:focus-within {
   -webkit-box-shadow: 0px 0px 25px 10px #2c2c2c;
           box-shadow: 0px 0px 25px 10px #2c2c2c;
-}
-
-.southside {
-  background-image: url("../images/southSide.jpeg");
-}
-
-.bangladesh {
-  background-image: url("../images/bangladesh.jpeg");
-}
-
-.charlieHeat {
-  background-image: url("../images/charlieHeat.jpeg");
-}
-
-.davidBanner {
-  background-image: url("../images/davidBanner.png");
-}
-
-.daytrip {
-  background-image: url("../images/daytrip.jpeg");
-}
-
-.djMustard {
-  background-image: url("../images/djMustard.png");
-}
-
-.donCannon {
-  background-image: url("../images/donCannon.jpeg");
-}
-
-.drummaBoy {
-  background-image: url("../images/drummaBoy.jpeg");
-}
-
-.justBlaze {
-  background-image: url("../images/justBlaze.jpeg");
-}
-
-.metroBoomin {
-  background-image: url("../images/metroBoomin.jpeg");
-}
-
-.mikeWill {
-  background-image: url("../images/mikeWill.jpeg");
-}
-
-.murdaBeatz {
-  background-image: url("../images/murdaBeatz.jpeg");
-}
-
-.sonnyDigital {
-  background-image: url("../images/sonnyDigital.jpeg");
-}
-
-.tayKeith {
-  background-image: url("../images/tayKeith.jpeg");
-}
-
-.youngChop {
-  background-image: url("../images/youngChop.jpeg");
-}
-
-.harryFraud {
-  background-image: url("../images/harryFraud.jpeg");
-}
-
-.bobbyJohnson {
-  background-image: url("../images/bobbyJohnson.jpeg");
-}
-
-.darkChild {
-  background-image: url("../images/darkChild.jpeg");
-}
-
-.jahlilBeats {
-  background-image: url("../images/jahlilBeats.jpg");
-}
-
-.londonOnDaTrack {
-  background-image: url("../images/londonOnDaTrack.jpeg");
-}
-
-.maalyRaw {
-  background-image: url("../images/maalyRaw.jpeg");
-}
-
-.nitti {
-  background-image: url("../images/nitti.jpeg");
-}
-
-.pierreBourne {
-  background-image: url("../images/pierreBourne.jpeg");
-}
-
-.quay {
-  background-image: url("../images/quay.jpeg");
-}
-
-.wheezy {
-  background-image: url("../images/wheezy.jpeg");
-}
-
-.jetson {
-  background-image: url("../images/jetson.jpeg");
-}
-
-.thaBizness {
-  background-image: url("../images/thaBizness.jpeg");
-}
-
-.dunDeal {
-  background-image: url("../images/dunDeal.jpeg");
-}
-
-.djSpinz {
-  background-image: url("../images/djSpinz.jpeg");
-}
-
-.zaytoven {
-  background-image: url("../images/zaytoven.jpeg");
 }
 
 @media (max-width: 600px) {
