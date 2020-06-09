@@ -210,6 +210,13 @@ const content = [
         image: './images/zaytoven.jpeg',
         audioClass: 'p30',
     },
+    {
+        name: "kennyBeats",
+        producer: `Kenny Beats`,
+        audio: './audio/kennyBeats.mp3',
+        image: './images/kennyBeats.jpeg',
+        audioClass: 'p31',
+    },
     
 ];
 
