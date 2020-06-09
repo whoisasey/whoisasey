@@ -217,7 +217,6 @@ const content = [
         image: './images/kennyBeats.jpeg',
         audioClass: 'p31',
     },
-    
 ];
 
 content.init = () => {
@@ -229,7 +228,7 @@ content.init = () => {
 
     //for each 'block' in the content array, give each block a random "position" between 1 and 9
     content.forEach(block => {
-        block.position = getRandomInt(25);
+        block.position = getRandomInt(30);
     });
 
     //sort our array based on random "position" value, and makes sure that no li's are repeated on the page
@@ -240,7 +239,7 @@ content.init = () => {
     // the number of blocks(divs) to show on the page
     content.length = 9;
 
-    //for each item in the array after adjusting for length, append new li with content from our 'content' array
+    //for each item in the array, after adjusting for length, append new li with content from our 'content' array
     content.forEach(block => {
         $('.container').append(`
         <li class="gridItem ${block.name}" id="${block.name}" tabindex="0">
@@ -248,7 +247,6 @@ content.init = () => {
             <h2>${block.producer}</h2>  
         </li>
         <audio src="${block.audio}" class="${block.audioClass}" preload="auto" type="audio/mpeg"></audio>
-
         `);
     });
 
@@ -267,7 +265,6 @@ content.init = () => {
             location.reload();
         }
     });
-
 }
 
 $(function() {

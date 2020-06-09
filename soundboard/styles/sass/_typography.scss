@@ -12,12 +12,11 @@ h1 {
     @include font(40);
     text-align: center;
     color: $primary;
-    margin-top: 5px;
-    margin: 0;
 }
 
 h2 {
     @include font(24);
+    margin-bottom: 5px;
 }
 
 p {
