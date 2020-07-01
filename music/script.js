@@ -51,40 +51,33 @@ function openNav() {
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("main").style.marginLeft = "0";
 }
 
-const newFunction = function() {
+const newFunction = function () {
     const newText = `Coming Soon`;
-    $('a.coming-soon').hover(function() {
+    $('a.coming-soon').hover(function () {
         $(this).html(newText).toggleClass('coming-soon');
         console.log(newText);
     })
 };
-  
-  $(document).ready(function(){
 
-// content.init() 
+$(document).ready(function () {
+
+    // content.init() 
     newFunction();
 
-      $("select").change(function () {
-          $(this).find("option:selected").each(function () {
-              $('.container').append(`
-              
-              `)
-          }
-    
-    
-    $("select").change(function(){
-        $(this).find("option:selected").each(function(){
+
+    $("select").change(function () {
+        $(this).find("option:selected").each(function () {
             const optionValue = $(this).attr("value");
-            if(optionValue){
+            if (optionValue) {
                 $(".box").not("." + optionValue).hide();
                 $("." + optionValue).show();
-            } else{
+            } else {
                 $(".box").hide();
             }
         });
-    }).change();  
-    
-})
+    }).change();
+
+}) 
