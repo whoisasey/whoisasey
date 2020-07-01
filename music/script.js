@@ -61,30 +61,30 @@ const newFunction = function() {
         console.log(newText);
     })
 };
-  
-  $(document).ready(function(){
+
+$(document).ready(function(){
 
 // content.init() 
-    newFunction();
+newFunction();
 
-      $("select").change(function () {
-          $(this).find("option:selected").each(function () {
-              $('.container').append(`
-              
-              `)
-          }
-    
-    
-    $("select").change(function(){
-        $(this).find("option:selected").each(function(){
-            const optionValue = $(this).attr("value");
-            if(optionValue){
-                $(".box").not("." + optionValue).hide();
-                $("." + optionValue).show();
-            } else{
-                $(".box").hide();
-            }
-        });
+$("select").change(function () {
+    $(this).find("option:selected").each(function () {
+        $('.container').append(`
+        
+        `)
+    })
+
+
+$("select").change(function(){
+    $(this).find("option:selected").each(function(){
+        const optionValue = $(this).attr("value");
+        if(optionValue){
+            $(".box").not("." + optionValue).hide();
+            $("." + optionValue).show();
+        } else{
+            $(".box").hide();
+        }
+    });
     }).change();  
-    
+})
 })
