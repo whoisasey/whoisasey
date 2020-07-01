@@ -18,6 +18,20 @@
 // };
 
 
+const mixes = {
+    chennessy: {
+        id: 001,
+        name: "Rinse FM with CHENNESSY (UK)",
+        player: `            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/828187732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rinsefm" title="Rinse FM" target="_blank" style="color: #cccccc; text-decoration: none;">Rinse FM</a> · <a href="https://soundcloud.com/rinsefm/chennessy250520" title="God Bless Chennessy with Asey - 25 May 2020" target="_blank" style="color: #cccccc; text-decoration: none;">God Bless Chennessy with Asey - 25 May 2020</a></div>`
+    }
+    esky: {
+        id: 002,
+        name: "Transmission with ESKY (UK)",
+        player: `<iframe width="100% " height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/829019770&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/eskybeat" title="Esk" target="_blank" style="color: #cccccc; text-decoration: none;">Esk</a> · <a href="https://soundcloud.com/eskybeat/04am38" title="Four in the AM #38 w/ Esk &amp; Asey" target="_blank" style="color: #cccccc; text-decoration: none;">Four in the AM #38 w/ Esk &amp; Asey</a></div>`
+    },
+
+}
+
 // content.init() => {
 
 //     content.forEach(block => {
@@ -52,6 +66,13 @@ const newFunction = function() {
 
 // content.init() 
     newFunction();
+
+      $("select").change(function () {
+          $(this).find("option:selected").each(function () {
+              $('.container').append(`
+              
+              `)
+          }
     
     
     $("select").change(function(){
