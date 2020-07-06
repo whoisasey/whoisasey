@@ -259,15 +259,32 @@ h2 {
 
 h3 {
   font-size: 4vw;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
 i {
-  font-size: 50px;
+  font-size: 30px;
+  padding: 10px;
 }
 
 section {
   margin: 20px 0;
   height: 70vh;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hidden {
@@ -280,15 +297,12 @@ section {
 
 a {
   text-decoration: none;
-  color: black;
+  border: 1px solid transparent;
+  padding: 10px;
 }
 
 .player span {
   border-bottom: 1px solid #333;
-}
-
-a:hover {
-  color: whitesmoke;
 }
 
 .comingSoon {
@@ -485,6 +499,54 @@ select {
   width: 50%;
   border: 1px solid black;
   height: 300px;
+}
+
+.video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.overlay p, .overlay i {
+  color: white;
+  text-align: center;
+}
+
+.overlay:hover {
+  opacity: 100%;
+}
+
+.overlay img {
+  width: 100px;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.overlay a {
+  color: white;
+}
+
+.overlay a:hover {
+  border: 1px solid white;
+}
+
+.tools {
+  padding: 10px 0;
 }
 
 .two {

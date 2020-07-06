@@ -9,6 +9,52 @@
 	height: 300px;
 }
 
+.video {
+	width: 100%; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    z-index: -100;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.overlay {
+	opacity: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+
+	p, i {
+		color: white;
+		text-align: center;
+	}
+
+	&:hover {
+		opacity: 100%;
+	}
+
+	img {
+		width: 100px;
+		filter: grayscale(0);
+	}
+
+	a {
+		color: white;
+		&:hover {
+        border: 1px solid white;
+		}
+	}
+}
+
+.tools {
+	padding: 10px 0;
+}
+
 .one {
 	// background-image: url('/assets/soundboard.gif');
 	// object-fit: fill;

@@ -20,6 +20,9 @@ h2 {
 
 h3 {
     font-size: 4vw;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
 p {
@@ -27,12 +30,22 @@ p {
 }
 
 i {
-    font-size: 50px;
+    font-size: 30px;
+    padding: 10px;
 }
 
 section {
     margin: 20px 0;
     height: 70vh;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -42,18 +55,19 @@ section {
 .player i {
     font-size: 24px;
 }
+
 a {
     text-decoration: none;
-    color: black;
+    border: 1px solid transparent;
+    padding: 10px;
+
 }
+
 
 .player span {
     border-bottom: 1px solid #333 ;
 }
 
-a:hover {
-    color: whitesmoke;
-}
 
 .comingSoon {
     color: white;
