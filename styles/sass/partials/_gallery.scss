@@ -6,7 +6,8 @@
 .gallery {
 	width: 50%;
 	border: 1px solid black;
-	height: 300px;
+	height: 500px;
+
 }
 
 .video {
@@ -17,7 +18,10 @@
 	bottom: 0;
     z-index: -100;
     background-size: contain;
-    overflow: hidden;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 15%;
+
 }
 
 .overlay {
@@ -28,6 +32,11 @@
 	top: 0;
 	left: 0;
 	bottom: 0;
+	right: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
 
 	p, i {
 		color: white;
@@ -56,14 +65,12 @@
 }
 
 .one {
-	// background-image: url('/assets/soundboard.gif');
-	// object-fit: fill;
-	// background-position: center;
-	// background-repeat: no-repeat;
+	.video {
+	}
 }
 
 .two {
-	background-color: lightpink;
+	// background-color: lightpink;
 }
 
 .three {
