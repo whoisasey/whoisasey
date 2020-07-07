@@ -237,7 +237,6 @@ img {
 }
 
 body, p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: black;
   font-family: 'Karla', sans-serif;
@@ -360,6 +359,10 @@ a {
   margin-right: 50px;
 }
 
+.closebtn {
+  color: white;
+}
+
 /* The subnavigation menu */
 .subnav {
   overflow: hidden;
@@ -409,7 +412,7 @@ a {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   font-size: 30px;

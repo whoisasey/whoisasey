@@ -12,7 +12,6 @@ const newFunction = () => {
   const newText = `Coming Soon`;
   $('a.coming-soon').hover(function () {
     $(this).html(newText).toggleClass('coming-soon');
-    console.log(newText);
   })
 }
 
@@ -30,29 +29,33 @@ const newFunction = () => {
 //   }).change();
 // }
 
-$(document).ready(function(){
-  AOS.init();
+const init = () => {
   newFunction();
 
   $('.menu').on("click", function () {
     openNav()
-    console.log('menu clicked')
   })
 
   $('.closebtn').on('click', function () {
     closeNav()
   })
 
-  // $("select").change(function () {
-  //   $(this).find("option:selected").each(function () {
-  //     const optionValue = $(this).attr("value");
-  //     if (optionValue) {
-  //       $(".box").not("." + optionValue).hide();
-  //       $("." + optionValue).show();
-  //     } else {
-  //       $(".box").hide();
-  //     }
-  //   });
-  // }).change();
+  $("select").change(function () {
+    $(this).find("option:selected").each(function () {
+      var optionValue = $(this).attr("value");
+      if (optionValue) {
+        $(".box").not("." + optionValue).hide();
+        $("." + optionValue).show();
+      } else {
+        $(".box").hide();
+      }
+    });
+  }).change();
+}
+
+$(function(){
+  AOS.init();
+
+  init();
 
 })

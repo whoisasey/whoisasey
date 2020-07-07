@@ -38,6 +38,10 @@
     font-size: 36px;
     margin-right: 50px;
 }
+
+.closebtn {
+  color: white;
+}
   /* The subnavigation menu */
   .subnav {
     overflow: hidden;
@@ -85,7 +89,7 @@
     }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   font-size:30px;
