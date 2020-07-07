@@ -44,28 +44,37 @@
 //     })
 // }
 
-function openNav() {
+const openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("main").style.marginRight = "250px";
 }
 
-function closeNav() {
+const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("main").style.marginRight = "0";
 }
 
-const newFunction = function () {
+const newFunction = () => {
     const newText = `Coming Soon`;
     $('a.coming-soon').hover(function () {
         $(this).html(newText).toggleClass('coming-soon');
         console.log(newText);
     })
-};
+}
 
 $(document).ready(function () {
 
-    // content.init() 
+    AOS.init();
     newFunction();
+
+    $('.menu').on("click", function () {
+        openNav()
+        console.log('menu clicked')
+    })
+
+    $('.closebtn').on('click', function () {
+        closeNav()
+    })
 
 
     $("select").change(function () {

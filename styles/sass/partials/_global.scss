@@ -45,6 +45,12 @@ ul {
     justify-content: center;
 }
 
+span, a {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 
 .hidden {
     display: none;

@@ -38,7 +38,6 @@
 	flex-direction: column;
 
 	p, i {
-		// color: white;
 		text-align: center;
 	}
 
@@ -48,15 +47,15 @@
 
 	img {
 		width: 100px;
-		filter: grayscale(0);
 	}
 
 	a {
 		// color: white;
 		&:hover {
-        border: 1px solid white;
+        border: 1px solid black;
 		}
 	}
+
 }
 
 .tools {
@@ -64,18 +63,17 @@
 }
 
 .overlay1 {
-	background-color: rgba(29, 120,225, 0.5 );
+	background-color: rgba(29, 120,225, 0.9 );
 }
 
-.two {
-	// background-color: lightpink;
+.overlay2 {
+	background-color: rgba(63, 191,127, 0.9);
 }
 
-.three {
-	// background-image: url('/assets/freelance.png');
-	// object-fit: cover;
+.overlay3 {
+	background-color: rgba(244,242,122,0.9);
 }
 
-.four {
-	// background-color: lightsalmon;
+.overlay4 {
+	background-color: rgba(191,63,63,0.9 );
 }
