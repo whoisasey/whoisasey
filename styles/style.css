@@ -259,7 +259,6 @@ h2 {
 
 h3 {
   font-size: 4vw;
-  color: white;
   text-align: center;
   padding: 10px 0;
 }
@@ -299,6 +298,7 @@ a {
   text-decoration: none;
   border: 1px solid transparent;
   padding: 10px;
+  color: black;
 }
 
 .player span {
@@ -516,7 +516,6 @@ select {
 
 .overlay {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   position: absolute;
   top: 0;
@@ -538,7 +537,6 @@ select {
 }
 
 .overlay p, .overlay i {
-  color: white;
   text-align: center;
 }
 
@@ -552,10 +550,6 @@ select {
           filter: grayscale(0);
 }
 
-.overlay a {
-  color: white;
-}
-
 .overlay a:hover {
   border: 1px solid white;
 }
@@ -564,10 +558,6 @@ select {
   padding: 10px 0;
 }
 
-.three {
-  background-color: lightgreen;
-}
-
-.four {
-  background-color: lightsalmon;
+.overlay1 {
+  background-color: rgba(29, 120, 225, 0.5);
 }

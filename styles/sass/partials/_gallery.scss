@@ -26,7 +26,6 @@
 
 .overlay {
 	opacity: 0;
-	background-color: rgba(0,0,0,0.5);
 	z-index: 1;
 	position: absolute;
 	top: 0;
@@ -39,7 +38,7 @@
 	flex-direction: column;
 
 	p, i {
-		color: white;
+		// color: white;
 		text-align: center;
 	}
 
@@ -53,7 +52,7 @@
 	}
 
 	a {
-		color: white;
+		// color: white;
 		&:hover {
         border: 1px solid white;
 		}
@@ -64,9 +63,8 @@
 	padding: 10px 0;
 }
 
-.one {
-	.video {
-	}
+.overlay1 {
+	background-color: rgba(29, 120,225, 0.5 );
 }
 
 .two {
@@ -74,9 +72,10 @@
 }
 
 .three {
-	background-color: lightgreen;
+	// background-image: url('/assets/freelance.png');
+	// object-fit: cover;
 }
 
 .four {
-	background-color: lightsalmon;
+	// background-color: lightsalmon;
 }
