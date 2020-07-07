@@ -1,11 +1,14 @@
 .projects {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	// flex-direction: column;
 }
 
 .gallery {
 	width: 50%;
-	border: 1px solid black;
+	// border: 1px solid white;
 	height: 500px;
 
 }
@@ -36,6 +39,9 @@
 	align-content: center;
 	justify-content: center;
 	flex-direction: column;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.8s;
+	text-align: center;
 
 	p, i {
 		text-align: center;
@@ -50,13 +56,13 @@
 	}
 
 	a {
-		// color: white;
 		&:hover {
         border: 1px solid black;
 		}
 	}
-
 }
+
+
 
 .tools {
 	padding: 10px 0;

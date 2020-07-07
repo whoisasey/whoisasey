@@ -1,0 +1,37 @@
+.highlights {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+
+	i {
+		font-size: 50px;
+		padding: 5px;
+		margin: 10px;
+	}
+	
+	li {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+
+	p {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	img {
+		width: 50px;
+		margin: 15px;
+	}
+}
+
