@@ -1,12 +1,22 @@
 .intro {
 	display: flex;
 
-	img {
-		width: 20%;;
+	.intro-image {
+		// width: 30%;
+		flex-grow: 1;
+		// flex-shrink: 1;
+		// width: 200px;
+		// border: 1px solid black;
 	}
 
 	.intro-text {
-		width: 80%;
+		// width: 70%;
+		flex-grow: 2;
+		// flex-shrink: 0;
+	}
+
+	a {
+		text-decoration: underline;
 	}
 
 }

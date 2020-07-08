@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <a href="mailto:contact.asey@gmail.com">Contact</a>
+        <a href="#contact">Contact</a>
         </div>
     </div>
     </header>
@@ -58,12 +58,16 @@
     <section  data-aos="fade-up" data-aos-duration="1000">
         <h1>who is asey?</h1>
         <div class="intro">
-            <img src="/assets/memoji.png" alt="" >
+            <div class="intro-image">
+                <img src="/assets/memoji.png" alt="an emoji of atina" >
+            </div>
             <div class="intro-text">
-                <p> >>> Atina is a Front-End Developer and DJ born and raised in Toronto, Canada. She loves combining the worlds of logic and endless possibilities to create exciting environments, whether it be on the web or in the club. </p>
-                <p>You can find Atina playing in various bars across Downtown Toronto.</p>
-                <p>She has a biweekly radio show on ISO Radio, a community online radio station in Toronto. Find out more
-                <span>here</span></p>
+                <p> >>> Welcome! My name is Atina and I am a Front-End Developer and DJ born and raised in Toronto. I love combining the worlds of logic and endless possibilities to create exciting environments, whether it be on the web or in the club. </p>
+                <p>As a youth, I found myself on Neopets coding my online store, and didn't think it would amount to anything in the future. It wasn't until recently that I found myself exploring coding as a career!</p>
+                <br>
+                <p>You can find me playing in various bars across Downtown Toronto.</p>
+                <p>I have a biweekly radio show on <a href="https://www.isoradio.to/">ISO Radio</a>, a community online radio station in Toronto. Find out more
+                <a href="konzai-archive.html">here</a></p>
             </div>
         </div>
         <div class="chevron" data-aos="zoom-in" data-aos-duration="2000">
@@ -189,8 +193,31 @@
             
     </div>
 </main>
-<section class="contact">
-    
+<section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
+    <div class="wrapper">
+        <h3>Contact me!</h3>
+    <div class="contactForm">
+        <ul class="socials">
+            <li>twitter</li>
+            <li>linkedin</li>
+            <li>github</li>
+            <li></li>
+        </ul>
+        <form action="http://www.focuspocus.io/magic/7a36774fad01c27506d732b6e43ba614" method="POST">
+            <!-- <div class="inputContainer"> -->
+                <label for="name" class="sr-only">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
+            <label class="sr-only" for="email">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <!-- </div> -->
+            <label class="sr-only" for="message" autocomplete="off">Your Message</label>
+            <textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
+            <div class="submit-container">
+            <button class="send" type="submit">Get In Touch</button>
+            </div>
+        </form>
+    </div>
+    </div>
 </section>
 
         

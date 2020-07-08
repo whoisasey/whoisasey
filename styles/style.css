@@ -237,19 +237,19 @@ img {
 }
 
 body, p {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: black;
   font-family: 'Karla', sans-serif;
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 5rem;
   line-height: 80px;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 4vw;
+  font-size: 4rem;
   line-height: 5vw;
   text-align: center;
 }
@@ -298,7 +298,6 @@ span:hover, a:hover {
 a {
   text-decoration: none;
   border: 1px solid transparent;
-  padding: 10px;
   color: black;
 }
 
@@ -498,12 +497,20 @@ select {
   display: flex;
 }
 
-.intro img {
-  width: 20%;
+.intro .intro-image {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .intro .intro-text {
-  width: 80%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.intro a {
+  text-decoration: underline;
 }
 
 .chevron {
@@ -640,6 +647,10 @@ select {
   width: 100px;
 }
 
+.overlay a {
+  padding: 10px;
+}
+
 .overlay a:hover {
   border: 1px solid black;
 }
@@ -720,6 +731,66 @@ select {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form, .socials {
+  border: 1px red solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form {
+  width: 60%;
+}
+
+input, textarea, button {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  resize: none;
+  text-transform: lowercase;
+}
+
+input, textarea::-webkit-input-placeholder {
+  font-family: 'Karla', sans-serif;
+}
+
+input, textarea:-ms-input-placeholder {
+  font-family: 'Karla', sans-serif;
+}
+
+input, textarea::-ms-input-placeholder {
+  font-family: 'Karla', sans-serif;
+}
+
+input, textarea::placeholder {
+  font-family: 'Karla', sans-serif;
+}
+
+button {
+  border: none;
+  padding: 8px;
+}
+
+.socials {
+  width: 40%;
+}
+
+.inputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 800px) {

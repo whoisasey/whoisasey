@@ -1,0 +1,45 @@
+.contactForm {
+	display: flex;
+}
+
+
+form, .socials {
+	// width: 50%;
+	border: 1px red solid;
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	width: 60%;
+}
+
+input, textarea, button {
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid whitesmoke;
+	resize: none;
+	text-transform: lowercase;
+}
+
+input, textarea::placeholder {
+font-family: 'Karla', sans-serif;
+
+}
+
+button {
+	border: none;
+	// display: inline-block;
+	padding: 8px;
+	// background-color: blue;
+// 	text-align: center;
+// 	margin: 0 auto;
+}
+
+.socials {
+	width: 40%;
+}
+
+.inputContainer {
+	display: flex;
+}
