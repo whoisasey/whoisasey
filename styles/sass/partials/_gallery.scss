@@ -12,8 +12,12 @@
 }
 
 .gallery {
-	width: 50%;
+	width: calc(50% - 40px);
+	margin: 20px;
 	height: 500px;
+	border-radius: 20px;
+	// border: 1px solid blue;
+
 }
 
 .video {
@@ -43,7 +47,7 @@
 	flex-direction: column;
 	text-align: center;
 	transition: ease-in-out 0.8s;
-	// border-radius: 20px;
+	border-radius: 20px;
 
 
 	p, i {
@@ -87,3 +91,4 @@
 .overlay4 {
 	background-color: rgba(191,63,63,0.9 );
 }
+

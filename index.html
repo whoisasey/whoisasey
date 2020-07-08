@@ -54,8 +54,13 @@
 <span class="menu">&#9776; </span>
 <main id="main">
     <div class="wrapper">
+    <div class="top" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="1000">
+        <a href="#main"><i class="fas fa-chevron-up"></i></a>
+        <p>Back to Top</p>
+    </div>
 
-    <section  data-aos="fade-up" data-aos-duration="1000">
+
+    <section id="top" data-aos="fade-up" data-aos-duration="1000">
         <h1>who is asey?</h1>
         <div class="intro">
             <div class="intro-image">
@@ -63,6 +68,7 @@
             </div>
             <div class="intro-text">
                 <p> >>> Welcome! My name is Atina and I am a Front-End Developer and DJ born and raised in Toronto. I love combining the worlds of logic and endless possibilities to create exciting environments, whether it be on the web or in the club. </p>
+                <br>
                 <p>As a youth, I found myself on Neopets coding my online store, and didn't think it would amount to anything in the future. It wasn't until recently that I found myself exploring coding as a career!</p>
                 <br>
                 <p>You can find me playing in various bars across Downtown Toronto.</p>
@@ -192,18 +198,21 @@
     </section>
             
     </div>
-</main>
 <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
     <div class="wrapper">
         <h3>Contact me!</h3>
-    <div class="contactForm">
-        <ul class="socials">
-            <li>twitter</li>
-            <li>linkedin</li>
-            <li>github</li>
-            <li></li>
-        </ul>
-        <form action="http://www.focuspocus.io/magic/7a36774fad01c27506d732b6e43ba614" method="POST">
+    <div class="contactInfo">
+        <div class="socialsText">
+            <p>If you want to have a chat about music, code or which Neopet was the best, hit my line!</p>
+            <ul class="socials">
+                <li><a href="http://www.twitter.com/whoisasey"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/atinachang"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/atinachang/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+        <form action="http://www.focuspocus.io/magic/contact.asey@gmail.com" method="POST">
             <!-- <div class="inputContainer"> -->
                 <label for="name" class="sr-only">Your Name</label>
             <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
@@ -212,13 +221,19 @@
         <!-- </div> -->
             <label class="sr-only" for="message" autocomplete="off">Your Message</label>
             <textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
-            <div class="submit-container">
-            <button class="send" type="submit">Get In Touch</button>
-            </div>
+            <input type="submit" value="get in touch">
+            <!-- <div class="submit-container"> -->
+            <!-- </div> -->
         </form>
+        </div>
     </div>
     </div>
 </section>
+<footer>
+    <p>Designed and Coded by Atina Chang 2020</p>
+    </footer>
+</main>
+
 
         
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

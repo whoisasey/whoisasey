@@ -29,6 +29,7 @@ const newFunction = () => {
 //   }).change();
 // }
 
+
 const init = () => {
   newFunction();
 
@@ -51,6 +52,15 @@ const init = () => {
       }
     });
   }).change();
+
+
+
+  $('.top').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  });
+
+
 }
 
 $(function(){
@@ -58,4 +68,19 @@ $(function(){
 
   init();
 
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 100) {
+  //     $('.top').fadeIn();
+  //   } else {
+  //     $('.top').fadeOut();
+  //   }
+  // });
+
+  
+
+  $(window).scroll(function () {
+    let scrolled = $(window).scrollTop();
+    if (scrolled > 400) $('.top').fadeIn('slow');
+    if (scrolled < 400) $('.top').fadeOut('slow');
+  });
 })
