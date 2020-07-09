@@ -267,6 +267,11 @@ i {
   padding: 10px;
 }
 
+i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 section {
   margin: 20px 0;
   min-height: 80vh;
@@ -728,11 +733,6 @@ select {
   font-size: 50px;
   padding: 5px;
   margin: 10px;
-}
-
-.skills i:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .skills li {
