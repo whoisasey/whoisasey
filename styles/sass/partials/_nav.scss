@@ -89,12 +89,12 @@
     }
 
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   font-size:30px;
   cursor:pointer;
   margin: 40px;
-  display: inline-block;
+  // display: inline-block;
   // position: sticky;
 }

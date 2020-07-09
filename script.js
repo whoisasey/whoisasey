@@ -78,9 +78,9 @@ $(function(){
 
   
 
-  $(window).scroll(function () {
-    let scrolled = $(window).scrollTop();
-    if (scrolled > 400) $('.top').fadeIn('slow');
-    if (scrolled < 400) $('.top').fadeOut('slow');
-  });
+  // $(window).scroll(function () {
+  //   let scrolled = $(window).scrollTop();
+  //   if (scrolled > 400) $('.top').fadeIn('slow');
+  //   if (scrolled < 400) $('.top').fadeOut('slow');
+  // });
 })

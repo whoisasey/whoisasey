@@ -64,8 +64,10 @@
 
 	a {
 	padding: 10px;
+	margin: 10px;
+	// margin: 10px;
 		&:hover {
-        border: 1px solid black;
+        color: white;
 		}
 	}
 }

@@ -246,6 +246,7 @@ h1 {
   font-size: 5rem;
   line-height: 80px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
@@ -256,7 +257,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3vw;
+  font-size: 3rem;
   text-align: center;
   padding: 10px 0;
 }
@@ -416,13 +417,12 @@ footer {
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   font-size: 30px;
   cursor: pointer;
   margin: 40px;
-  display: inline-block;
 }
 
 #dropdown {
@@ -500,18 +500,13 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.intro .intro-image {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .intro .intro-text {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  width: 80%;
 }
 
 .intro a {
@@ -521,7 +516,7 @@ select {
 .top {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 50px;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,6 +532,10 @@ select {
   text-align: center;
 }
 
+.top i {
+  font-size: 2rem;
+}
+
 .chevron {
   margin: 0 auto;
   display: -webkit-box;
@@ -547,8 +546,8 @@ select {
           justify-content: center;
 }
 
-.top i, .chevron i {
-  font-size: 100px;
+.chevron i {
+  font-size: 5rem;
 }
 
 .fa-chevron-down {
@@ -676,10 +675,11 @@ select {
 
 .overlay a {
   padding: 10px;
+  margin: 10px;
 }
 
 .overlay a:hover {
-  border: 1px solid black;
+  color: white;
 }
 
 .tools {
@@ -780,10 +780,6 @@ select {
   padding: 10px 20px;
 }
 
-form, .socialsText {
-  border: 1px red solid;
-}
-
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -844,11 +840,62 @@ input, textarea::placeholder {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 1024px) {
+  .top {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
-  .projects {
+  .gallery {
+    width: 100%;
+  }
+  .menu {
+    right: 75px;
+  }
+  .liveLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .gallery-container, .liveLink {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro .intro-image {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .intro .intro-text {
+    width: 100%;
+  }
+  .top {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm, .socialsText, .skills {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .top i, .chevron i {
+    font-size: 50px;
   }
 }

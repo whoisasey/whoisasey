@@ -1,18 +1,10 @@
 .intro {
 	display: flex;
+	justify-content: center;
 
-	.intro-image {
-		// width: 30%;
-		flex-grow: 1;
-		// flex-shrink: 1;
-		// width: 200px;
-		// border: 1px solid black;
-	}
 
 	.intro-text {
-		// width: 70%;
-		flex-grow: 2;
-		// flex-shrink: 0;
+		width: 80%;
 	}
 
 	a {
@@ -23,7 +15,7 @@
 .top {
 	position: fixed;
 	bottom: 30px;
-	right: 30px;
+	right: 50px;
 	z-index: 1000;
 	display: flex;
 	flex-direction: column;
@@ -32,19 +24,22 @@
 		font-size: .8rem;
 		text-align: center;
 	}
+
+	i {
+		font-size: 2rem;
+	}
 }
 
 .chevron {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+			i {
+		font-size: 5rem;
+	}
+
 }
 
-.top, .chevron {
-		i {
-		font-size: 100px;
-	}
-}
 
 .fa-chevron-down {
     display: inline-block;
