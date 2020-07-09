@@ -1,0 +1,62 @@
+@media only screen and (max-width: 1024px) {
+.top {
+	display: none;
+}
+}
+
+@media (max-width: 800px) {
+	.gallery {
+		width: 100%;
+	}
+		.menu {
+		right: 75px;
+	}
+
+	.liveLink {
+		display: flex;
+	}
+
+	.gallery-container, .liveLink {
+		flex-direction: column;
+	}
+
+	.intro {
+		flex-direction: column;
+
+		.intro-image {
+		width: 40%;
+		margin: 0 auto;
+
+		}
+
+		.intro-text {
+			width: 100%;
+		}
+	}
+
+	.top {
+		display: none;
+	}
+}
+
+@media (max-width: 700px) {
+
+	.contactInfo {
+		flex-direction: column;
+	}
+
+	.contactForm, .socialsText, .skills {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.top, .chevron {
+		i {
+		font-size: 50px;
+	}
+}
+
+}

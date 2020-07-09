@@ -4,7 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
+    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <!-- Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Style Sheet -->
+
     <link rel="stylesheet" href="styles/style.css">
     
 
@@ -13,62 +22,224 @@
 
 <body>
     <header>
-
     <div class="navbar">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
-
-        <a href="#">Home</a>
-        <!-- <a href="#" class="coming-soon">About</a> -->
-
+            <span class="closebtn">&times; </span>
+            
+            <a href="#">Home</a>
+            <!-- <a href="#" class="coming-soon">About</a> -->
+            
+            <div class="subnav">
+                <button class="subnavbtn">
+                        <a href="#projects">
+                        Projects 
+                    </a>
+            </div>
         <div class="subnav">
             <button class="subnavbtn">
-                <!-- <a href="#" class="coming-soon">Music -->
                     <a href ="#">Music 
-                    <!-- <i class="fa fa-caret-down"></i> -->
                     </a>
                 </button>
             <div class="subnav-content">
-                <a href="./music/konzai-archive.html">The KONZAI Show Archive</a>
-                <a href="./music/guest-mixes.html">Mixes</a>
+                <a href="konzai-archive.html">The KONZAI Show Archive</a>
+                <a href="guest-mixes.html">Mixes</a>
                 <a href="https://whoisasey.bandcamp.com/album/tiger-balm-edit-pack">Tiger Balm Edit Pack</a>
-
                 <!-- <a href="#" class="coming-soon">Clients</a> -->
             </div>
         </div>
-        <div class="subnav">
-            <button class="subnavbtn">
-                <!-- <a href="#" class="coming-soon"> -->
-                    <a href="#">
-                    Web 
-                    <!-- <i class="fa fa-caret-down"></i> -->
-                </a>
-            <div class="subnav-content">
-            <a href="./soundboard/index.html">Soundboard </a>
-            <!-- <a href="#">Project</a>
-            <a href="#">Project</a> -->
-            </div> 
-        </div>
 
-        <a href="mailto:contact.asey@gmail.com">Contact</a>
-    </div>
+        <a href="#contact">Contact</a>
+        </div>
     </div>
     </header>
-<section id="main">
-
-    <span class="menu" onclick="openNav()">&#9776; Menu</span>
-
+<span class="menu">&#9776; </span>
+<main id="main">
     <div class="wrapper">
-    <!-- <div class="content"> -->
+    <div class="top" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="1000">
+        <a href="#main"><i class="fas fa-chevron-up"></i></a>
+        <p>Back to Top</p>
+    </div>
+
+
+    <section id="top" data-aos="fade-up" data-aos-duration="1000">
         <h1>who is asey?</h1>
-        <h2>atina is a web developer and DJ based in Toronto, Canada</h2>
-        <h3>full website coming soon</h3>
-        <a href="https://www.instagram.com/whoisasey/"><i class="fab fa-instagram"></i></a>
-        <!-- </div> -->
+        <div class="intro">
+            <div class="intro-image">
+                <img src="/assets/memoji.png" alt="an emoji of atina" >
+            </div>
+            <div class="intro-text">
+                <p> >>> Welcome! My name is Atina and I am a Front-End Developer and DJ born and raised in Toronto. I love combining the worlds of logic and endless possibilities to create exciting environments, whether it be on the web or in the club. </p>
+                <br>
+                <p>As a youth, I found myself on Neopets coding my online store, and didn't think it would amount to anything in the future. It wasn't until recently that I found myself exploring coding as a career!</p>
+                <br>
+                <p>You can find me playing in various bars across Downtown Toronto.</p>
+                <p>I have a biweekly radio show on <a href="https://www.isoradio.to/">ISO Radio</a>, a community online radio station in Toronto. Find out more
+                <a href="konzai-archive.html">here</a></p>
+            </div>
+        </div>
+        <div class="chevron" data-aos="zoom-in" data-aos-duration="2000">
+            <a href="#projects"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects" data-aos="fade-down" data-aos-duration="1000">
+        <h2>Projects</h2>
+
+        <div class="gallery-container">
+            <div class="gallery one" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+                <video class ="video" preload="auto" autoplay loop>
+                    <source src="/assets/soundboard.mp4" type="video/mp4">
+                </video>
+
+                <div class="overlay overlay1">
+                    <h3>Producer Soundboard</h3>
+                    <p>Discover your favourite Hip-Hop producers</p>
+                    <ul class="tools">
+                        <li><i class="devicons devicons-html5"></i></li>
+                        <li><i class="devicons devicons-css3"></i></li>
+                        <li><i class="devicons devicons-javascript"></i></li>
+                        <li><i class="devicons devicons-sass"></i></li>
+                    </ul>
+                    <ul class="liveLink">
+                        <li><a href="https://atinachang.github.io/soundboard/">View Live</a></li>
+                        <li><a href="https://github.com/atinachang/soundboard">View Github</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery two" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                <video class="video" preload="auto" muted autoplay loop>
+                    <source src="/assets/appetite.mp4" type="video/mp4">
+                </video>
+                
+                <div class="overlay overlay2">
+                    <h3>App-etite</h3>
+                    <p>Less thinking, more eating!</p>
+                    <ul class="tools">
+                        <li><i class="devicons devicons-html5"></i></li>
+                        <li><i class="devicons devicons-css3"></i></li>
+                        <li><i class="devicons devicons-javascript"></i></li>
+                    </ul>
+                    <ul class="liveLink">
+                        <li><a href="https://melissa-atina.github.io/app-etite/">View Live</a></li>
+                        <li><a href="https://github.com/melissa-atina/app-etite">View Github</a></li>
+                        <!-- Team member: Melissa Ahlstrom -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="gallery three" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <video class="video" preload="auto" muted autoplay loop>
+                    <source src="/assets/bitterparent.mp4" type="video/mp4">
+                </video>
+                
+                <div class="overlay overlay3">
+                    <h3>A Bitter Parent</h3>
+                    <p>Find a food that you and your child will both enjoy</p>
+                    <ul class="tools">
+                        <li><i class="devicons devicons-html5"></i></li>
+                        <li><i class="devicons devicons-css3"></i></li>
+                        <li><i class="devicons devicons-react"></i></li>
+                        <li><i class="devicons devicons-sass"></i></li>
+                    </ul>
+                    <ul class="liveLink">
+                        <li><a href="https://a-bitter-parent.github.io/a-Bitter-Parent/">View Live</a></li>
+                        <li><a href="https://github.com/A-Bitter-Parent/a-Bitter-Parent">View Github</a></li>
+                        <!-- Team members: Michael Currie, Oleg Lozovatyi, Thusa Aruvelsanthiran -->
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="gallery four" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="/assets/freelance.png" alt="mockup of freelance.me">
+                
+                <div class="overlay overlay4">
+                    <h3>Freelance.me</h3>
+                    <p>Find your next freelancer for your project</p>
+                    <ul class="tools">
+                        <li><i class="devicons devicons-html5"></i></li>
+                        <li><i class="devicons devicons-css3"></i></li>
+                        <li><i class="devicons devicons-react"></i></li>
+                        <li><i class="devicons devicons-javascript"></i></li>
+
+                    </ul>
+                    <ul class="liveLink">
+                        <li><a href="#">View Live</a></li>
+                        <li><a href="#">View Github</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
         </div>
     </section>
+
+    <section class="highlights" data-aos="fade-down" data-aos-duration="1000">
+        <h2>Skills</h2>
+        <ul class="skills"> 
+            <li><i class="devicons devicons-html5"></i><p>HTML5</p></li>
+            <li><i class="devicons devicons-css3"></i><p>CSS</p></li>
+            <li><i class="devicons devicons-react"></i><p>React</p></li>
+            <li><i class="devicons devicons-sass"></i><p>SCSS</p></li>
+            <li><i class="devicons devicons-javascript"></i><p>JavaScript</p></li>
+            <li><i class="devicons devicons-firebase"></i><p>Firebase</p></li>
+            <li><i class="devicons devicons-github_badge"></i><p>Github</p></li>
+            <li><i class="devicons devicons-terminal_badge"></i><p>Terminal</p></li>
+            <li><i class="devicons devicons-responsive"></i>
+                <p>Responsive<br>Design</p>
+            </li>
+            <li><i class="devicons devicons-jquery"></i>
+                <p>Jquery</p>
+            </li>
+        </ul>
+    </section>
+            
+    </div>
+<section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
+    <div class="wrapper">
+        <h3>Contact me!</h3>
+    <div class="contactInfo">
+        <div class="socialsText">
+            <p>If you want to have a chat about music, code or which Neopet was the best, hit my line!</p>
+            <ul class="socials">
+                <li><a href="http://www.twitter.com/whoisasey"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/atinachang"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/atinachang/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="contactForm">
+        <form action="http://www.focuspocus.io/magic/contact.asey@gmail.com" method="POST">
+            <!-- <div class="inputContainer"> -->
+                <label for="name" class="sr-only">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
+            <label class="sr-only" for="email">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+        <!-- </div> -->
+            <label class="sr-only" for="message" autocomplete="off">Your Message</label>
+            <textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
+            <input type="submit" value="get in touch">
+            <!-- <div class="submit-container"> -->
+            <!-- </div> -->
+        </form>
+        </div>
+    </div>
+    </div>
+</section>
+<footer>
+    <p>Designed and Coded by Atina Chang 2020</p>
+    </footer>
+</main>
+
+
+        
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

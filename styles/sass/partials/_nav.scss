@@ -10,7 +10,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
@@ -34,60 +34,67 @@
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 0;
     font-size: 36px;
-    margin-left: 50px;
+    margin-right: 50px;
 }
-  /* The subnavigation menu */
-  .subnav {
-    /* float: left; */
-    overflow: hidden;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    /* padding: 14px 16px; */
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    padding: 0;
-  }
 
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: #333;
-    width: 100%;
-    z-index: 1;
-  }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-  }
+.closebtn {
+  color: white;
+}
+/* The subnavigation menu */
+.subnav {
+  overflow: hidden;
+}
 
-  .subnav-content a:hover {
-    color: grey;
-  }
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block;
-  }
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #333;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  color: grey;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
 
 #menu {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: margin-right .5s;
     }
 
 .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size:30px;
   cursor:pointer;
+  margin: 40px;
+  // display: inline-block;
+  // position: sticky;
 }

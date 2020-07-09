@@ -1,73 +1,111 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+* {
+    
+}
+
+body, p {
+    // font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    // line-height: 33px;
     color: black;
-    text-transform: uppercase;
-    animation: change-background 15s ease-in-out infinite;
+    // animation: change-background 15s ease-in-out infinite;
+    font-family: 'Karla', sans-serif;
 }
 
 h1 {
-    font-size: 10vw;
+    font-size: 5rem;
     line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
-    font-size: 6vw;
+    font-size: 4rem;
     line-height: 5vw;
+    margin: 20px 0;
+    // text-transform: lowercase;
+    text-align: center;
 }
 
 h3 {
-    font-size: 4vw;
+    font-size: 3rem;
+    // color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
+
 i {
-    font-size: 50px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+section {
+    margin: 20px 0;
+    min-height: 80vh;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;   
+}
+
+span, a {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 
 .hidden {
     display: none;
 }
-.player i {
-    font-size: 24px;
-}
+
+
 a {
     text-decoration: none;
+    border: 1px solid transparent;
+    // padding: 10px;
     color: black;
 }
+
 
 .player span {
     border-bottom: 1px solid #333 ;
 }
 
-a:hover {
-    color: whitesmoke;
-}
 
 .comingSoon {
     color: white;
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
 }
 
-@keyframes change-background {
-    0% {
-    background: lightyellow;
-    }
-    25% {
-        background: lightpink;
-    }
-    50% {
-    background: lightblue;
-    }
-    75% {
-        background: lightgreen;
-    }
-    100% {
-    background: lightyellow;
-    }
+footer {
+    text-align: center;
 }
+
+// @keyframes change-background {
+//     0% {
+//     background: lightyellow;
+//     }
+//     25% {
+//         background: lightpink;
+//     }
+//     50% {
+//     background: lightblue;
+//     }
+//     75% {
+//         background: lightgreen;
+//     }
+//     100% {
+//     background: lightyellow;
+//     }
+// }

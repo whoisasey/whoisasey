@@ -1,3 +1,10 @@
-@import 'global';
-@import 'nav';
-@import 'dropdown';
+@import './setup';
+@import './global';
+@import './nav';
+@import './dropdown';
+@import './intro';
+@import './gallery';
+@import './highlights';
+@import './contact';
+@import './music';
+@import './mediaQueries'

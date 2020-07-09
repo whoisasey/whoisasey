@@ -1,0 +1,56 @@
+.intro {
+	display: flex;
+	justify-content: center;
+
+
+	.intro-text {
+		width: 80%;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.top {
+	position: fixed;
+	bottom: 30px;
+	right: 50px;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		font-size: .8rem;
+		text-align: center;
+	}
+
+	i {
+		font-size: 2.5rem;
+	}
+}
+
+.chevron {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+			i {
+		font-size: 5rem;
+	}
+
+}
+
+
+.fa-chevron-down {
+    display: inline-block;
+    position: relative;
+	animation: bounce 2s infinite linear;
+	animation-delay: 2s;
+}
+
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}

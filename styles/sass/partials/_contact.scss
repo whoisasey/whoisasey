@@ -1,0 +1,56 @@
+.contactInfo {
+	display: flex;
+	// flex-direction: column;
+
+	input, textarea, button {
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid whitesmoke;
+	resize: none;
+	text-transform: lowercase;
+	width: 90%;
+	}
+
+	button {
+	border: none;
+	padding: 10px 20px;
+	}
+
+}
+
+
+form {
+	display: flex;
+	align-content: center;
+	// width: 60%;
+	align-items: center;
+	flex-direction: column;
+}
+
+input, textarea::placeholder {
+	font-family: 'Karla', sans-serif;
+}
+
+.socials {
+}
+
+.inputContainer {
+	display: flex;
+}
+
+.contactForm {
+	width: 60%;
+}
+
+.socialsText {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	// display: initial
+	padding: 30px;
+
+	ul {
+		margin: 40px 0;
+		justify-content: space-between;
+	}
+}
