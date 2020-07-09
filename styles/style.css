@@ -293,10 +293,6 @@ span:hover, a:hover {
   display: none;
 }
 
-.player i {
-  font-size: 24px;
-}
-
 a {
   text-decoration: none;
   border: 1px solid transparent;
@@ -533,7 +529,7 @@ select {
 }
 
 .top i {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .chevron {
@@ -838,6 +834,26 @@ input, textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.music .wrapper {
+  width: 70%;
+}
+
+.music p {
+  padding: 15px 0;
+}
+
+.music span {
+  text-decoration: underline;
+}
+
+.featured {
+  margin: 50px auto;
+}
+
+.player i {
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 1024px) {
