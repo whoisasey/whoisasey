@@ -1,3 +1,7 @@
+section .about {
+	min-height: 100vh;;
+}
+
 .intro {
 	display: flex;
 	justify-content: center;
@@ -35,7 +39,7 @@
 	display: flex;
 	justify-content: center;
 	
-		i {
+	i {
 		font-size: 5rem;
 	}
 }

@@ -280,8 +280,6 @@ i:hover {
 }
 
 section {
-  margin: 20px 0;
-  min-height: 80vh;
   overflow: hidden;
 }
 
@@ -489,6 +487,10 @@ a {
 
 select {
   width: 40%;
+}
+
+section .about {
+  min-height: 100vh;
 }
 
 .intro {
@@ -717,6 +719,7 @@ select {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 100px 0;
 }
 
 .skills {
@@ -833,6 +836,10 @@ input, textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact {
+  margin-top: 100px;
 }
 
 .music .wrapper {

@@ -15,20 +15,6 @@ const newFunction = () => {
   })
 }
 
-// const dropdown = () => {
-//   $("select").change(function () {
-//     $(this).find("option:selected").each(function () {
-//       const optionValue = $(this).attr("value");
-//       if (optionValue) {
-//         $(".box").not("." + optionValue).hide();
-//         $("." + optionValue).show();
-//       } else {
-//         $(".box").hide();
-//       }
-//     });
-//   }).change();
-// }
-
 
 const init = () => {
   newFunction();
@@ -54,12 +40,10 @@ const init = () => {
   }).change();
 
 
-
   $('.top').on('click', function (e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
-
 
 }
 
@@ -68,19 +52,4 @@ $(function(){
 
   init();
 
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $('.top').fadeIn();
-  //   } else {
-  //     $('.top').fadeOut();
-  //   }
-  // });
-
-  
-
-  // $(window).scroll(function () {
-  //   let scrolled = $(window).scrollTop();
-  //   if (scrolled > 400) $('.top').fadeIn('slow');
-  //   if (scrolled < 400) $('.top').fadeOut('slow');
-  // });
 })
