@@ -907,4 +907,7 @@ input, textarea::placeholder {
   .wrapper {
     width: 90%;
   }
+  .gallery, .overlay {
+    border-radius: unset;
+  }
 }
