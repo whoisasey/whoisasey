@@ -902,3 +902,9 @@ input, textarea::placeholder {
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .wrapper {
+    width: 90%;
+  }
+}
