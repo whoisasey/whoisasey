@@ -1,6 +1,6 @@
 const openNav = () => {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("mySidenav").style.width = "375px";
+  document.getElementById("main").style.marginRight = "375px";
 }
 
 const closeNav = () => {
