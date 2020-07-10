@@ -257,6 +257,7 @@ h2 {
 h3 {
   font-size: 3rem;
   padding: 10px 0;
+  word-wrap: break-word;
 }
 
 h4 {
@@ -281,6 +282,7 @@ i:hover {
 section {
   margin: 20px 0;
   min-height: 80vh;
+  overflow: hidden;
 }
 
 li {
@@ -328,7 +330,7 @@ a {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
   background-color: #111;
@@ -419,7 +421,8 @@ a {
   right: 0;
   font-size: 3rem;
   cursor: pointer;
-  margin: 40px;
+  padding: 40px;
+  z-index: 1;
 }
 
 #dropdown {
@@ -510,6 +513,7 @@ select {
   bottom: 30px;
   right: 50px;
   z-index: 1000;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,12 +853,6 @@ input, textarea::placeholder {
 
 .player i {
   font-size: 1rem;
-}
-
-@media only screen and (max-width: 1024px) {
-  .top {
-    display: none;
-  }
 }
 
 @media (max-width: 800px) {

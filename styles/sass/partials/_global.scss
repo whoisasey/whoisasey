@@ -3,6 +3,7 @@ body, p {
     font-size: 1.5rem;
     color: black;
     font-family: 'Karla', sans-serif;
+    // overflow: hidden;
 }
 
 h1 {
@@ -20,6 +21,7 @@ h2 {
 h3 {
     font-size: 3rem;
     padding: 10px 0;
+    word-wrap: break-word;
 }
 
 h4 {
@@ -44,6 +46,7 @@ i {
 section {
     margin: 20px 0;
     min-height: 80vh;
+    overflow: hidden;
 }
 
 li {
