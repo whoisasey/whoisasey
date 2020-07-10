@@ -28,7 +28,7 @@
     background-size: contain;
 	overflow: hidden;
 	margin: 0 auto;
-	padding-top: 15%;
+	padding-top: 10%;
 }
 
 .overlay {
@@ -67,6 +67,10 @@
         color: white;
 		}
 	}
+
+	h4 {
+		margin: 0 30px;
+	}
 }
 
 .tools {
@@ -88,4 +92,5 @@
 .overlay4 {
 	background-color: rgba(191,63,63,0.9 );
 }
+
 

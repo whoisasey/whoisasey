@@ -13,10 +13,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
         <!-- Style Sheet -->
-
     <link rel="stylesheet" href="styles/style.css">
-    
-
+    <!-- Document Icon -->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <title>whoisasey.com</title>
 </head>
 
@@ -27,18 +26,16 @@
             <span class="closebtn">&times; </span>
             
             <a href="#">Home</a>
-            <!-- <a href="#" class="coming-soon">About</a> -->
             
             <div class="subnav">
                 <button class="subnavbtn">
                         <a href="#projects">
-                        Projects 
-                    </a>
+                        Projects</a>
+                    </button>
             </div>
         <div class="subnav">
             <button class="subnavbtn">
-                    <a href ="#">Music 
-                    </a>
+                    <a href ="#">Music</a>
                 </button>
             <div class="subnav-content">
                 <a href="konzai-archive.html">The KONZAI Show Archive</a>
@@ -47,11 +44,11 @@
                 <!-- <a href="#" class="coming-soon">Clients</a> -->
             </div>
         </div>
-
         <a href="#contact">Contact</a>
         </div>
     </div>
     </header>
+
 <span class="menu">&#9776; </span>
 <main id="main">
     <div class="wrapper">
@@ -59,7 +56,6 @@
         <a href="#main"><i class="fas fa-chevron-up"></i></a>
         <p>Back to Top</p>
     </div>
-
 
     <section id="top" data-aos="fade-up" data-aos-duration="1000">
         <h1>who is asey?</h1>
@@ -128,10 +124,8 @@
                     <ul class="liveLink">
                         <li><a href="https://melissa-atina.github.io/app-etite/">View Live</a></li>
                         <li><a href="https://github.com/melissa-atina/app-etite">View Github</a></li>
-                        <!-- Team member: Melissa Ahlstrom -->
                     </ul>
                 </div>
-
             </div>
 
             <div class="gallery three" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
@@ -154,15 +148,16 @@
                         <!-- Team members: Michael Currie, Oleg Lozovatyi, Thusa Aruvelsanthiran -->
                     </ul>
                 </div>
-
             </div>
 
             <div class="gallery four" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <img src="/assets/freelance.png" alt="mockup of freelance.me">
+                <video class="video" preload="auto" muted autoplay loop>
+                    <source src="/assets/freelance.mp4" type="video/mp4">
+                </video>
                 
                 <div class="overlay overlay4">
                     <h3>Freelance.me</h3>
-                    <h4>Find your next freelancer for your project</h4>
+                    <h4>Find a freelancer for your next project, and add others to a dynamic database</h4>
                     <ul class="tools">
                         <li><i class="devicons devicons-html5"></i></li>
                         <li><i class="devicons devicons-css3"></i></li>
@@ -176,8 +171,6 @@
                         <li><a href="#">View Github</a></li>
                     </ul>
                 </div>
-
-                
             </div>
         </div>
     </section>
@@ -193,18 +186,12 @@
             <li><i class="devicons devicons-firebase"></i><p>Firebase</p></li>
             <li><i class="devicons devicons-github_badge"></i><p>Github</p></li>
             <li><i class="devicons devicons-terminal_badge"></i><p>Terminal</p></li>
-            <li><i class="devicons devicons-responsive"></i>
-                <p>Responsive<br>Design</p>
-            </li>
-            <li><i class="devicons devicons-jquery"></i>
-                <p>Jquery</p>
-            </li>
+            <li><i class="devicons devicons-responsive"></i><p>Responsive<br>Design</p></li>
+            <li><i class="devicons devicons-jquery"></i><p>Jquery</p></li>
         </ul>
     </section>
             
-    </div>
-<section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
-    <div class="wrapper">
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
         <h3>Contact me!</h3>
     <div class="contactInfo">
         <div class="socialsText">
@@ -217,21 +204,21 @@
             </ul>
         </div>
         <div class="contactForm">
-        <form action="http://www.focuspocus.io/magic/7a36774fad01c27506d732b6e43ba614" method="POST">
+            <form action="http://www.focuspocus.io/magic/7a36774fad01c27506d732b6e43ba614" method="POST">
                 <label for="name" class="sr-only">Your Name</label>
-            <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
-            <label class="sr-only" for="email">Your Email</label>
-            <input type="email" name="email" id="email" placeholder="Your Email" required>
-            <label class="sr-only" for="message" autocomplete="off">Your Message</label>
-            <textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
-            <input type="submit" value="get in touch">
-        </form>
+                <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
+                <label class="sr-only" for="email">Your Email</label>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <label class="sr-only" for="message" autocomplete="off">Your Message</label>
+                <textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
+                <input type="submit" value="get in touch &#128232;" >
+            </form>
         </div>
     </div>
     </div>
-</section>
-<footer>
-    <p>Designed and Coded by Atina 2020</p>
+    </section>
+    <footer>
+        <p>Designed and Coded by Atina 2020</p>
     </footer>
 </main>
 

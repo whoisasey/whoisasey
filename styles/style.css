@@ -269,7 +269,7 @@ h1, h2, h3, h4, footer {
 }
 
 i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 10px;
 }
 
@@ -444,7 +444,7 @@ a {
 
 .select-css {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #444;
   line-height: 1.3;
@@ -624,7 +624,7 @@ select {
   background-size: contain;
   overflow: hidden;
   margin: 0 auto;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .overlay {
@@ -672,6 +672,10 @@ select {
 
 .overlay a:hover {
   color: white;
+}
+
+.overlay h4 {
+  margin: 0 30px;
 }
 
 .tools {
@@ -844,7 +848,7 @@ input, textarea::placeholder {
 }
 
 .player i {
-  font-size: 2.4rem;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 1024px) {
