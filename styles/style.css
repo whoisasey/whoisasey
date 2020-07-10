@@ -511,7 +511,7 @@ select {
 .top {
   position: fixed;
   bottom: 30px;
-  right: 50px;
+  right: 0px;
   z-index: 1000;
   padding: 10px;
   display: -webkit-box;
@@ -529,7 +529,7 @@ select {
 }
 
 .top i {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .chevron {
@@ -853,6 +853,12 @@ input, textarea::placeholder {
 
 .player i {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .top {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
