@@ -9,25 +9,30 @@ h1 {
     font-size: 5rem;
     line-height: 80px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 h2 {
     font-size: 4rem;
     line-height: 5vw;
     margin: 20px 0;
-    text-align: center;
 }
 
 h3 {
     font-size: 3rem;
-    text-align: center;
     padding: 10px 0;
 }
 
+h4 {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
+
+h1, h2, h3, h4, footer {
+    text-align: center;
+}
 
 i {
-    font-size: 30px;
+    font-size: 2.5rem;
     padding: 10px;
 
     &:hover {
@@ -47,7 +52,8 @@ li {
 
 ul {
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
+    flex-wrap: wrap; 
 }
 
 span, a {
@@ -56,23 +62,11 @@ span, a {
     }
 }
 
-
-.hidden {
-    display: none;
-}
-
-
 a {
     text-decoration: none;
     border: 1px solid transparent;
     color: black;
 }
-
-
-.player span {
-    border-bottom: 1px solid #333 ;
-}
-
 
 .comingSoon {
     color: white;
@@ -83,25 +77,3 @@ a {
     width: 80%;
     margin: 0 auto;
 }
-
-footer {
-    text-align: center;
-}
-
-// @keyframes change-background {
-//     0% {
-//     background: lightyellow;
-//     }
-//     25% {
-//         background: lightpink;
-//     }
-//     50% {
-//     background: lightblue;
-//     }
-//     75% {
-//         background: lightgreen;
-//     }
-//     100% {
-//     background: lightyellow;
-//     }
-// }
