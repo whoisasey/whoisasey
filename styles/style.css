@@ -909,5 +909,6 @@ input, textarea::placeholder {
   }
   .gallery, .overlay {
     border-radius: unset;
+    margin: 0 auto;
   }
 }
