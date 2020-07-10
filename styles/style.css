@@ -283,6 +283,18 @@ section {
   overflow: hidden;
 }
 
+footer {
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+.projects, .highlights, .contact {
+  margin-top: 100px;
+}
+
 li {
   list-style: none;
 }
@@ -489,7 +501,7 @@ select {
   width: 40%;
 }
 
-section .about {
+section.about {
   min-height: 100vh;
 }
 
@@ -719,7 +731,6 @@ section .about {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 100px 0;
 }
 
 .skills {
@@ -836,10 +847,6 @@ input, textarea::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.contact {
-  margin-top: 100px;
 }
 
 .music .wrapper {
