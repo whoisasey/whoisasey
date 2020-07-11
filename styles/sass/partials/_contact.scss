@@ -13,6 +13,8 @@
 	button {
 	border: none;
 	padding: 10px 20px;
+
+
 	}
 }
 
@@ -26,6 +28,12 @@ form {
 
 input, textarea::placeholder {
 	font-family: 'Karla', sans-serif;
+}
+
+input[type=submit] {
+	&:hover {
+	border: 1px solid black;
+	}
 }
 
 .inputContainer {
