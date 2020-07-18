@@ -599,7 +599,7 @@ section.about {
   }
 }
 
-.projects {
+.projects, .progress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,6 +630,18 @@ section.about {
   margin: 20px;
   height: 500px;
   border-radius: 20px;
+}
+
+.progress {
+  text-align: center;
+}
+
+.progress .overlay {
+  color: white;
+}
+
+.progress .overlay a {
+  text-decoration: underline;
 }
 
 .video {
@@ -714,6 +726,10 @@ section.about {
 
 .overlay4 {
   background-color: rgba(191, 63, 63, 0.9);
+}
+
+.overlayWIP1 {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .highlights {

@@ -1,4 +1,4 @@
-.projects{
+.projects, .progress{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -16,6 +16,16 @@
 	margin: 20px;
 	height: 500px;
 	border-radius: 20px;
+}
+
+.progress {
+	text-align: center;
+	.overlay {
+			color: white;
+		a {
+			text-decoration: underline;
+		}
+	}
 }
 
 .video {
@@ -93,4 +103,8 @@
 	background-color: rgba(191,63,63,0.9 );
 }
 
+
+.overlayWIP1 {
+	background-color: rgba(0,0,0, 0.6);
+}
 
