@@ -1,0 +1,27 @@
+.blm {
+	.wrapper {
+		width: 60%;
+	}
+	ul {
+		justify-content: left;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	li {
+		padding: 10px;
+		// display: inline;
+		// list-style-type: square;
+		// color: black;
+		border: 1px solid transparent;
+
+		&:hover {
+			border: 1px solid lightgrey;
+		}
+	}
+}
+
+.home {
+	padding: 20px;
+	display: block;
+	float: right;
+}

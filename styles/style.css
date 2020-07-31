@@ -972,3 +972,34 @@ input[type=submit]:hover {
     width: 90%;
   }
 }
+
+.blm .wrapper {
+  width: 60%;
+}
+
+.blm ul {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.blm li {
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
+.blm li:hover {
+  border: 1px solid lightgrey;
+}
+
+.home {
+  padding: 20px;
+  display: block;
+  float: right;
+}
