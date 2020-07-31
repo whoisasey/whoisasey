@@ -991,11 +991,10 @@ input[type=submit]:hover {
 
 .blm li {
   padding: 10px;
-  border: 1px solid transparent;
 }
 
 .blm li:hover {
-  border: 1px solid lightgrey;
+  font-weight: bold;
 }
 
 .home {

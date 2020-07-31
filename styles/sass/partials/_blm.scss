@@ -12,10 +12,12 @@
 		// display: inline;
 		// list-style-type: square;
 		// color: black;
-		border: 1px solid transparent;
+		// border: 1px solid transparent;
 
 		&:hover {
-			border: 1px solid lightgrey;
+			// border: 1px solid lightgrey;
+			// font-size: 1.7rem;
+			font-weight: bold;
 		}
 	}
 }
