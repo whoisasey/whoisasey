@@ -1,89 +1,96 @@
-
-body, p {
-    font-size: 1.5rem;
-    color: black;
-    font-family: 'Karla', sans-serif;
+body,
+p {
+	font-size: 1.5rem;
+	color: black;
+	font-family: "Karla", sans-serif;
 }
 
 h1 {
-    font-size: 5rem;
-    line-height: 80px;
-    text-transform: uppercase;
+	font-size: 5rem;
+	line-height: 10vh;
+	text-transform: uppercase;
 }
 
 h2 {
-    font-size: 4rem;
-    line-height: 5vw;
-    margin: 20px 0;
+	font-size: 4rem;
+	line-height: 10vh;
+	margin: 20px 0;
 }
 
 h3 {
-    font-size: 3rem;
-    padding: 10px 0;
-    word-wrap: break-word;
+	font-size: 3rem;
+	padding: 10px 0;
+	word-wrap: break-word;
 }
 
 h4 {
-    font-size: 1.8rem;
-    font-weight: lighter;
+	font-size: 1.8rem;
+	font-weight: lighter;
 }
 
-h1, h2, h3, h4, footer {
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+footer {
+	text-align: center;
 }
 
 i {
-    font-size: 2rem;
-    padding: 10px;
+	font-size: 2rem;
+	padding: 10px;
 
-    &:hover {
-    transform: scale(1.1);
-    }
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 section {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 footer {
-    margin-top: 50px;
+	margin-top: 50px;
 
-    p {
-        font-size: 1rem;
-    }
+	p {
+		font-size: 1rem;
+	}
 }
-.projects, .highlights, .contact {
-    margin-top: 100px;
+.projects,
+.highlights,
+.contact {
+	margin-top: 100px;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 ul {
-    display: flex;
-    justify-content: center;  
-    flex-wrap: wrap; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
-span, a {
-    &:hover {
-        cursor: pointer;
-    }
+span,
+a {
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 a {
-    text-decoration: none;
-    border: 1px solid transparent;
-    color: black;
+	text-decoration: none;
+	border: 1px solid transparent;
+	color: black;
 }
 
 .comingSoon {
-    color: white;
+	color: white;
 }
 
 .wrapper {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
+	max-width: 1200px;
+	width: 80%;
+	margin: 0 auto;
 }

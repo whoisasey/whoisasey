@@ -236,21 +236,22 @@ img {
   padding: 0;
 }
 
-body, p {
+body,
+p {
   font-size: 1.5rem;
   color: black;
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 h1 {
   font-size: 5rem;
-  line-height: 80px;
+  line-height: 10vh;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 4rem;
-  line-height: 5vw;
+  line-height: 10vh;
   margin: 20px 0;
 }
 
@@ -265,7 +266,11 @@ h4 {
   font-weight: lighter;
 }
 
-h1, h2, h3, h4, footer {
+h1,
+h2,
+h3,
+h4,
+footer {
   text-align: center;
 }
 
@@ -291,7 +296,9 @@ footer p {
   font-size: 1rem;
 }
 
-.projects, .highlights, .contact {
+.projects,
+.highlights,
+.contact {
   margin-top: 100px;
 }
 
@@ -310,7 +317,8 @@ ul {
       flex-wrap: wrap;
 }
 
-span:hover, a:hover {
+span:hover,
+a:hover {
   cursor: pointer;
 }
 
