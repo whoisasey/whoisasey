@@ -266,6 +266,11 @@ h4 {
   font-weight: lighter;
 }
 
+h5 {
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+
 h1,
 h2,
 h3,
@@ -887,6 +892,10 @@ input[type=submit]:hover {
 
 .music span {
   text-decoration: underline;
+}
+
+.music strong {
+  font-size: 1.4rem;
 }
 
 .featured {
