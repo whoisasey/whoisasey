@@ -898,6 +898,10 @@ input[type=submit]:hover {
   font-size: 1.4rem;
 }
 
+.music h5 {
+  padding: 50px 0;
+}
+
 .featured {
   margin: 50px auto;
 }
