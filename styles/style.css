@@ -798,13 +798,9 @@ section.about {
   text-transform: uppercase;
 }
 
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactInfo input, .contactInfo textarea, .contactInfo button {
+.contactInfo input,
+.contactInfo textarea,
+.contactInfo button {
   margin: 10px;
   padding: 5px;
   border: 1px solid whitesmoke;
@@ -833,23 +829,27 @@ form {
           flex-direction: column;
 }
 
-input, textarea::-webkit-input-placeholder {
-  font-family: 'Karla', sans-serif;
+input,
+textarea::-webkit-input-placeholder {
+  font-family: "Karla", sans-serif;
 }
 
-input, textarea:-ms-input-placeholder {
-  font-family: 'Karla', sans-serif;
+input,
+textarea:-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
 }
 
-input, textarea::-ms-input-placeholder {
-  font-family: 'Karla', sans-serif;
+input,
+textarea::-ms-input-placeholder {
+  font-family: "Karla", sans-serif;
 }
 
-input, textarea::placeholder {
-  font-family: 'Karla', sans-serif;
+input,
+textarea::placeholder {
+  font-family: "Karla", sans-serif;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   border: 1px solid black;
 }
 
@@ -864,7 +864,7 @@ input[type=submit]:hover {
 }
 
 .socialsText {
-  width: 40%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,6 +873,7 @@ input[type=submit]:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 30px;
+  margin: 0 auto;
 }
 
 .socialsText ul {
