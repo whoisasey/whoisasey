@@ -798,6 +798,12 @@ section.about {
   text-transform: uppercase;
 }
 
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contactInfo input,
 .contactInfo textarea,
 .contactInfo button {
@@ -860,11 +866,10 @@ input[type="submit"]:hover {
 }
 
 .contactForm {
-  width: 60%;
+  width: 70%;
 }
 
 .socialsText {
-  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
