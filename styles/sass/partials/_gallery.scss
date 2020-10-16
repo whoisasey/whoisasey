@@ -1,4 +1,5 @@
-.projects, .progress{
+.projects,
+.progress {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,8 +13,8 @@
 }
 
 .gallery {
-	width: calc(50% - 40px);
-	margin: 20px;
+	width: calc(25% - 20px);
+	margin: 10px;
 	height: 500px;
 	border-radius: 20px;
 }
@@ -21,7 +22,7 @@
 .progress {
 	text-align: center;
 	.overlay {
-			color: white;
+		color: white;
 		a {
 			text-decoration: underline;
 		}
@@ -29,13 +30,13 @@
 }
 
 .video {
-	width: 100%; 
+	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
-    z-index: -100;
-    background-size: contain;
+	z-index: -100;
+	background-size: contain;
 	overflow: hidden;
 	margin: 0 auto;
 	padding-top: 10%;
@@ -56,9 +57,10 @@
 	text-align: center;
 	transition: ease-in-out 0.8s;
 	border-radius: 20px;
+	padding: 10px 15px;
 
-
-	p, i {
+	p,
+	i {
 		text-align: center;
 	}
 
@@ -71,10 +73,10 @@
 	}
 
 	a {
-	padding: 10px;
-	margin: 10px;
+		padding: 10px;
+		margin: 10px;
 		&:hover {
-        color: white;
+			color: white;
 		}
 	}
 
@@ -88,23 +90,21 @@
 }
 
 .overlay1 {
-	background-color: rgba(29, 120,225, 0.9 );
+	background-color: rgba(29, 120, 225, 0.9);
 }
 
 .overlay2 {
-	background-color: rgba(63, 191,127, 0.9);
+	background-color: rgba(63, 191, 127, 0.9);
 }
 
 .overlay3 {
-	background-color: rgba(244,242,122,0.9);
+	background-color: rgba(244, 242, 122, 0.9);
 }
 
 .overlay4 {
-	background-color: rgba(191,63,63,0.9 );
+	background-color: rgba(191, 63, 63, 0.9);
 }
-
 
 .overlayWIP1 {
-	background-color: rgba(0,0,0, 0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 }
-
