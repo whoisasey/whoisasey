@@ -44,7 +44,6 @@ const init = () => {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
-
 }
 
 $(function(){

@@ -15,6 +15,14 @@ section.about {
 	}
 }
 
+.intro-image {
+	width: 20%;
+	margin: 0 auto;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+}
+
 .top {
 	position: fixed;
 	bottom: 30px;
@@ -25,7 +33,7 @@ section.about {
 	flex-direction: column;
 
 	p {
-		font-size: .8rem;
+		font-size: 0.8rem;
 		text-align: center;
 	}
 
@@ -39,23 +47,29 @@ section.about {
 	display: flex;
 	justify-content: center;
 
-	
 	i {
 		font-size: 5rem;
 	}
 }
 
-
 .fa-chevron-down {
-    display: inline-block;
-    position: relative;
+	display: inline-block;
+	position: relative;
 	animation: bounce 2s infinite linear;
 	animation-delay: 2s;
 }
 
 @keyframes bounce {
-    0% { top: 0; }
-    50% { top: -0.2em; }
-    70% { top: -0.3em; }
-    100% { top: 0; }
+	0% {
+		top: 0;
+	}
+	50% {
+		top: -0.2em;
+	}
+	70% {
+		top: -0.3em;
+	}
+	100% {
+		top: 0;
+	}
 }
