@@ -9,26 +9,26 @@
 
 	div {
 		@include flexbox();
-		padding-top: 100px;
+		// padding-top: 100px;
 	}
 }
-#list h3, #list a
+#list h3
 // #list .gallery-item
 {
-	opacity: 0;
-	animation: fadeIn 1s ease-in-out both;
+	// opacity: 0;
+	// animation: fadeIn 1s ease-in-out both;
 }
 // home page fade in
 
 #list h3:nth-child(2) {
-	animation-delay: 1s;
+	// animation-delay: 1s;
 }
-#list a:nth-child(3) {
-	animation-delay: 2s;
+#list h3:nth-child(3) {
+	// animation-delay: 2s;
 }
 
 #list div:nth-child(4) {
-	animation-delay: 4s;
+	// animation-delay: 4s;
 }
 // #list li:nth-child(5) {
 // 	animation-delay: 4s;
@@ -49,13 +49,13 @@
 // 	animation-delay: 4.5s;
 // }
 
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
+// @keyframes fadeIn {
+// 	from {
+// 		opacity: 0;
+// 		transform: translate3d(0, -20%, 0);
+// 	}
+// 	to {
+// 		opacity: 1;
+// 		transform: translate3d(0, 0, 0);
+// 	}
+// }

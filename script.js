@@ -17,33 +17,33 @@ const newFunction = () => {
 
 
 const init = () => {
-  newFunction();
+  // newFunction();
 
-  $('.menu').on("click", function () {
-    openNav()
-  })
+  // $('.menu').on("click", function () {
+  //   openNav()
+  // })
 
-  $('.closebtn').on('click', function () {
-    closeNav()
-  })
+  // $('.closebtn').on('click', function () {
+  //   closeNav()
+  // })
 
-  $("select").change(function () {
-    $(this).find("option:selected").each(function () {
-      var optionValue = $(this).attr("value");
-      if (optionValue) {
-        $(".box").not("." + optionValue).hide();
-        $("." + optionValue).show();
-      } else {
-        $(".box").hide();
-      }
-    });
-  }).change();
+  // $("select").change(function () {
+  //   $(this).find("option:selected").each(function () {
+  //     var optionValue = $(this).attr("value");
+  //     if (optionValue) {
+  //       $(".box").not("." + optionValue).hide();
+  //       $("." + optionValue).show();
+  //     } else {
+  //       $(".box").hide();
+  //     }
+  //   });
+  // }).change();
 
 
-  $('.top').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: 0 }, 'slow');
-  });
+  // $('.top').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('html, body').animate({ scrollTop: 0 }, 'slow');
+  // });
 
   $('video').mouseover(function(){
     $(this).get(0).play();
