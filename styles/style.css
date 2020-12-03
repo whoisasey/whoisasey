@@ -242,12 +242,12 @@ img {
   padding: 0;
 }
 
-body,
-p {
+body {
   font-size: 1.5rem;
   font-weight: 400;
   color: black;
   font-family: "Roboto", sans-serif;
+  background: #e1e1e1;
 }
 
 h1 {
@@ -287,7 +287,9 @@ h1,
 h2,
 h3,
 h4,
-footer {
+span,
+footer,
+p {
   text-align: center;
 }
 
@@ -299,6 +301,11 @@ i {
 i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.fa,
+.fab {
+  display: inline;
 }
 
 section {
@@ -334,13 +341,12 @@ ul {
       flex-wrap: wrap;
 }
 
-span:hover,
 a:hover {
   cursor: pointer;
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
 }
 
@@ -348,6 +354,11 @@ a {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
+}
+
+video,
+img {
+  width: 100%;
 }
 
 /* The navigation menu */
@@ -651,18 +662,8 @@ section.about {
   }
 }
 
-.projects,
-.progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.tools {
+  padding: 10px 0;
 }
 
 .gallery-container {
@@ -671,203 +672,20 @@ section.about {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
-.gallery {
-  width: calc(25% - 20px);
-  margin: 10px;
-  height: 500px;
-  border-radius: 20px;
-}
-
-.progress {
-  text-align: center;
-}
-
-.progress .overlay {
-  color: white;
-}
-
-.progress .overlay a {
-  text-decoration: underline;
-}
-
-.video {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -100;
-  background-size: contain;
-  overflow: hidden;
-  margin: 0 auto;
-  padding-top: 10%;
-}
-
-.overlay {
-  opacity: 0;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  -webkit-transition: ease-in-out 0.8s;
-  transition: ease-in-out 0.8s;
-  border-radius: 20px;
-  padding: 10px 15px;
-}
-
-.overlay p,
-.overlay i {
-  text-align: center;
-}
-
-.overlay:hover {
-  opacity: 100%;
-}
-
-.overlay img {
-  width: 100px;
-}
-
-.overlay a {
-  padding: 10px;
-  margin: 10px;
-}
-
-.overlay a:hover {
-  color: white;
-}
-
-.overlay h4 {
-  margin: 0 30px;
-}
-
-.tools {
-  padding: 10px 0;
-}
-
-.overlay1 {
-  background-color: rgba(29, 120, 225, 0.9);
-}
-
-.overlay2 {
-  background-color: rgba(63, 191, 127, 0.9);
-}
-
-.overlay3 {
-  background-color: rgba(244, 242, 122, 0.9);
-}
-
-.overlay4 {
-  background-color: rgba(191, 63, 63, 0.9);
-}
-
-.overlayWIP1 {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.highlights {
+.gallery-image,
+.gallery-item,
+.gallery-text,
+.liveLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 70%;
-}
-
-.skills i {
-  font-size: 50px;
-  padding: 5px;
-  margin: 10px;
-}
-
-.skills li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.skills p {
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.contactInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactInfo input,
-.contactInfo textarea,
-.contactInfo button {
-  margin: 10px;
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  resize: none;
-  text-transform: lowercase;
-  width: 90%;
-}
-
-.contactInfo button {
-  border: none;
-  padding: 10px 20px;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -877,73 +695,28 @@ form {
           flex-direction: column;
 }
 
-input,
-textarea::-webkit-input-placeholder {
-  font-family: "Karla", sans-serif;
-}
-
-input,
-textarea:-ms-input-placeholder {
-  font-family: "Karla", sans-serif;
-}
-
-input,
-textarea::-ms-input-placeholder {
-  font-family: "Karla", sans-serif;
-}
-
-input,
-textarea::placeholder {
-  font-family: "Karla", sans-serif;
-}
-
-input[type="submit"]:hover {
-  border: 1px solid black;
-}
-
-.inputContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactForm {
-  width: 70%;
-}
-
-.socialsText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px;
-  margin: 0 auto;
-}
-
-.socialsText ul {
-  margin: 40px 0;
+.gallery-item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0.8;
 }
 
-.music .wrapper {
-  width: 70%;
+.gallery-item:hover {
+  opacity: 1;
 }
 
-.music p {
-  padding: 15px 0;
+.gallery-item h3 {
+  font-weight: bold;
 }
 
-.music span {
-  text-decoration: underline;
-}
-
-.music h5 {
-  padding: 50px 0;
+.shows {
+  margin: 25px 0;
 }
 
 .featured {
@@ -985,8 +758,8 @@ input[type="submit"]:hover {
 }
 
 #list a:nth-child(4) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @-webkit-keyframes fadeIn {
