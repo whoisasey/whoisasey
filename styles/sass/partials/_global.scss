@@ -80,7 +80,7 @@ section {
 }
 
 footer {
-	margin-top: 50px;
+	// margin-top: 50px;
 
 	p {
 		font-size: 1rem;
@@ -122,4 +122,10 @@ a {
 video,
 img {
 	width: 100%;
+}
+
+nav {
+	a {
+		padding: 50px;
+	}
 }

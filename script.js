@@ -44,6 +44,12 @@ const init = () => {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, 'slow');
   });
+
+  $('video').mouseover(function(){
+    $(this).get(0).play();
+}).mouseout(function(){
+    $(this).get(0).pause();
+})
 }
 
 $(function(){

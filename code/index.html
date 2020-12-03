@@ -7,6 +7,8 @@
 	<!-- Icons -->
 	<script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
 	<link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
 
 	<!-- Animate On Scroll Library -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,18 +26,51 @@
 </head>
 
 <body>
+	<nav id="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li class="active"><a href="../code/">Code</a></li>
+			<li><a href="../DJ/">DJ</a></li>
+			<li><a href="../BLM/">BLM Resources</a></li>
+		</ul>
+	</nav>
 
 	<div class="wrapper ">
 		<h1>client work</h1>
 
-		<div class="gallery-container"  data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+		<div class="gallery-container" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="2000">
+
+			<!-- new currency -->
+			<div class="gallery-item">
+				<h3>newcurrency.ca</h3>
+				<span>Platform (WIP)</span>
+				<div class="gallery-image">
+					<img src="../assets/newcurr.png" />
+					<!-- <video class="video" preload="auto" id="gallery-vid">
+						<source src="../assets/samyang.m4v" type="video/mp4">
+					</video> -->
+				</div>
+				<div class="gallery-text">
+					<ul class="tools">
+						<li><i class="devicons devicons-html5"></i></li>
+						<li><i class="devicons devicons-css3"></i></li>
+						<li>
+							<i class="fab fa-wordpress"></i>
+						</li>
+					</ul>
+					<ul class="liveLink">
+						<li><a href="http://www.newcurrency.ca/">View Live</a></li>
+					</ul>
+				</div>
+			</div>
+
 
 		<!-- sam yang -->
 			<div class="gallery-item">
 				<h3>akasamyang.ca</h3>
 				<span>Photography Portfolio for Sam Yang</span>
 				<div class="gallery-image">
-					<video class="video" preload="auto" autoplay loop>
+					<video class="video" preload="auto" id="gallery-vid">
 						<source src="../assets/samyang.m4v" type="video/mp4">
 					</video>
 				</div>
@@ -58,7 +93,7 @@
 				<h3>Before Our Vows</h3>
 				<span>Wedding Services celebrating African Culture</span>
 				<div class="gallery-image">
-					<video class="video" preload="auto" autoplay loop>
+					<video class="video" preload="auto">
 						<source src="../assets/bovx2.m4v" type="video/mp4">
 					</video>
 				</div>
@@ -79,7 +114,7 @@
 				<h3>aeijri.com</h3>
 				<span>Photography Portfolio for Adrian Muir</span>
 				<div class="gallery-image">
-					<video class="video" preload="auto" autoplay loop>
+					<video class="video" preload="auto" >
 						<source src="../assets/aeijri.m4v" type="video/mp4">
 					</video>
 				</div>
@@ -100,9 +135,9 @@
 			<!-- music picnic -->
 			<div class="gallery-item">
 				<h3>Music Picnic</h3>
-				<span>Digital Migration and website overhaul for <a href="http://www.musicpicnic.com/">Music Picnic</a></h4>
+				<span>Digital Migration and website overhaul protoype for <a href="http://www.musicpicnic.com/">Music Picnic</a></h4>
 				<div class="gallery-image">
-					<video class="video" preload="auto" autoplay loop>
+					<video class="video" preload="auto" >
 						<source src="../assets/music.m4v" type="video/mp4">
 					</video>
 				</div>
@@ -118,25 +153,19 @@
 					<li><a href="https://github.com/atinachang/musicpicnic">View Github</a></li>
 					</ul>
 				</div>
-
-
-
 			</div>
-
 
 		</div>
 
-
+		
 		<h1>projects</h1>
-
-
-		<div class="gallery-container" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+		<div class="gallery-container"  data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="1500">
 			<div class="gallery-item">
 			
 				<div class="gallery-image">
 					<h3>Producer Soundboard</h3>
 					<span>Discover your favourite Hip-Hop producers</span>
-					<video class="video" preload="auto" autoplay loop>
+					<video class="video" preload="auto">
 						<source src="../assets/soundboard.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -159,7 +188,7 @@
 				<div class="gallery-image">
 					<h3>App-etite</h3>
 					<span>Less thinking, more eating!</span>
-					<video class="video" preload="auto" muted autoplay loop>
+					<video class="video" preload="auto" muted> 
 				<source src="/assets/appetite.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -179,7 +208,9 @@
 				</ul>
 			</div>
 		</div>
-	<!-- <section class="highlights" data-aos="fade-down" data-aos-duration="1500">
+		</div>
+
+	<section class="highlights" data-aos="fade-down" data-aos-duration="1500">
 		<h2>Skills</h2>
 		<ul class="skills">
 			<li><i class="devicons devicons-html5"></i>
@@ -197,8 +228,8 @@
 			<li><i class="devicons devicons-javascript"></i>
 				<p>JavaScript</p>
 			</li>
-			<li><i class="devicons devicons-firebase"></i>
-				<p>SQL</p>
+			<li><i class="devicon-mongodb-plain"></i>
+				<p>MongoDB</p>
 			</li>
 			<li><i class="devicons devicons-github_badge"></i>
 				<p>Github</p>
@@ -215,14 +246,26 @@
 			<li><i class="devicons devicons-npm"></i>
 				<p>NPM</p>
 			</li>
-	
+			<li>
+				<i class="devicon-wordpress-plain "></i>
+				<p>Wordpress</p>
+			</li>
+			<li>
+				<i class="devicon-vuejs-plain"></i>
+				<p>Vue.js</p>
+			</li>
 		</ul>
-	</section> -->
 
+	</section>
 		</div>
 
 	</div>
-
+<footer>
+	<ul>
+			<li><a href="../about/">About</a></li>
+			<li><a href="mailto:contact.asey@gmail.com?subject=Hey Atina!">Contact</a></li>
+	</ul>
+</footer>
 </body>
 
 </html>

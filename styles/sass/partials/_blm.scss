@@ -1,11 +1,9 @@
 .blm {
-	.wrapper {
-		width: 60%;
-	}
+	min-height: 80vh;
 	ul {
 		justify-content: left;
 		flex-direction: column;
-		flex-wrap: nowrap;
+		// flex-wrap: nowrap;
 	}
 	li {
 		padding: 10px;
@@ -14,10 +12,4 @@
 			font-weight: bold;
 		}
 	}
-}
-
-.home {
-	padding: 20px;
-	display: block;
-	float: right;
 }

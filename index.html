@@ -1,270 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Icons -->
 	<script src="https://kit.fontawesome.com/73fc7bf8da.js" crossorigin="anonymous"></script>
-	<link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<!-- Animate On Scroll Library -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
-			<!-- Style Sheet -->
-	<link rel="stylesheet" href="styles/style.css">
+
+	<!-- Style Sheet -->
+	<link rel="stylesheet" href="../styles/style.css">
 	<!-- Document Icon -->
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-	<title>whoisasey.com</title>
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="../script.js"></script>	<title>whoisasey.com</title>
 </head>
-
 <body>
-	<header>
-	<div class="navbar">
-			<div id="mySidenav" class="sidenav">
-					<span class="closebtn">&times; </span>
-					
-					<a href="">Home</a>
-					
-					<div class="subnav">
-							<button class="subnavbtn">
-											<a href="#projects">
-											Projects</a>
-									</button>
-									<!-- <a href="/">Media</a> -->
-							<a href="#contact">Contact</a>
-							<a href="./BLM/">BLM Resources</a>
-
-					</div>
-			<div class="subnav">
-					<button class="subnavbtn">
-									<a>Music</a>
-							</button>
-					<div class="subnav-content">
-							<a href="./konzai/">The KONZAI Show Archive</a>
-							<a href="./mixes/">Mixes</a>
-							<a href="https://whoisasey.bandcamp.com/album/tiger-balm-edit-pack">Tiger Balm Edit Pack</a>
-					</div>
-			</div>
-			</div>
-	</div>
-	</header>
-
-	<main id="main">
-			<div class="wrapper">
-					<!-- <div class="top" data-aos="zoom-in-left" data-aos-delay="1000" data-aos-duration="1000">
-							<a href="#main"><i class="fas fa-chevron-up"></i></a>
-							<p>Back to Top</p>
-					</div> -->
-					
-			<section class="about" id="top" data-aos="fade-up" data-aos-duration="1000">
-			<div class="header-container">
-					<span class="menu">&#9776; </span>
-					<h1>who is asey?</h1>
-			</div>
-			<div class="intro">
-					<div class="intro-image">
-							<img src="/assets/memoji.png" alt="an emoji of atina" >
-					</div>
-					<div class="intro-text">
-							<p> My name is <strong>Atina</strong>, also known as ASEY <em>(AC)</em> and I am a Front-End Developer and DJ born and raised in Toronto. </p>
-							<br>
-							<p>I love combining the worlds of logic and endless possibilities to create exciting environments, whether it be on the web or in the club. </p>
-							<!-- <br> to break up lines on mobile for easier reading-->
-							<br>
-							<p>As a youth, I found myself on Neopets coding my online store, and didn't think it would amount to anything in the future. It wasn't until recently that I found myself exploring the great world of code!</p>
-							<br>
-							<p>You can find me playing in various bars across Downtown Toronto.</p>
-							<br>
-							<p>I have a biweekly radio show on <a href="https://www.isoradio.to/">ISO Radio</a>, a community online radio station in Toronto. Find out more
-							<a href="konzai-archive.html">here</a></p>
-					</div>
-			</div>
-			<div class="chevron" data-aos="zoom-in" data-aos-duration="2000">
-					<a href="#projects"><i class="fas fa-chevron-down"></i></a>
-			</div>
-	</section>
-
-	<section class="projects" id="projects" data-aos="fade-down" data-aos-duration="1000">
-			<h2>Stuff I made</h2>
-
-			<div class="gallery-container">
-					<div class="gallery one" data-aos="fade-right"data-aos-easing="ease-in-sine">
-
-							<video class ="video" preload="auto" autoplay loop>
-									<source src="/assets/soundboard.mp4" type="video/mp4">
-							</video>
-
-							<div class="overlay overlay1">
-									<h3>Producer Soundboard</h3>
-									<h4>Discover your favourite Hip-Hop producers</h4>
-									<ul class="tools">
-											<li><i class="devicons devicons-html5"></i></li>
-											<li><i class="devicons devicons-css3"></i></li>
-											<li><i class="devicons devicons-javascript"></i></li>
-											<li><i class="devicons devicons-sass"></i></li>
-									</ul>
-									<ul class="liveLink">
-											<li><a href="https://atinachang.github.io/soundboard/">View Live</a></li>
-											<li><a href="https://github.com/atinachang/soundboard">View Github</a></li>
-									</ul>
-							</div>
-					</div>
-
-					<div class="gallery two" data-aos="fade-left"  data-aos-easing="ease-in-sine">
-							<video class="video" preload="auto" muted autoplay loop>
-									<source src="/assets/appetite.mp4" type="video/mp4">
-							</video>
-							
-							<div class="overlay overlay2">
-									<h3>App-etite</h3>
-									<h4>Less thinking, more eating!</h4>
-									<p>
-											Paired programming with <br><a href="https://www.melahls.dev/">Melissa Ahlstrom</a>
-									</p>
-									<ul class="tools">
-											<li><i class="devicons devicons-html5"></i></li>
-											<li><i class="devicons devicons-css3"></i></li>
-											<li><i class="devicons devicons-javascript"></i></li>
-									</ul>
-									<ul class="liveLink">
-											<li><a href="https://melissa-atina.github.io/app-etite/">View Live</a></li>
-											<li><a href="https://github.com/melissa-atina/app-etite">View Github</a></li>
-									</ul>
-							</div>
-					</div>
-
-					<div class="gallery three" data-aos="fade-right" data-aos-easing="ease-in-sine">
-							<video class="video" preload="auto" muted autoplay loop>
-									<source src="/assets/bitterparent.mp4" type="video/mp4">
-							</video>
-							
-							<div class="overlay overlay3">
-									<h3>A Bitter Parent</h3>
-									<h4>Find a food that you and your child will both enjoy</h4>
-									<ul class="tools">
-											<li><i class="devicons devicons-html5"></i></li>
-											<li><i class="devicons devicons-css3"></i></li>
-											<li><i class="devicons devicons-react"></i></li>
-											<li><i class="devicons devicons-sass"></i></li>
-									</ul>
-									<ul class="liveLink">
-											<li><a href="https://a-bitter-parent.github.io/a-Bitter-Parent/">View Live</a></li>
-											<li><a href="https://github.com/A-Bitter-Parent/a-Bitter-Parent">View Github</a></li>
-											<!-- Team members: Michael Currie, Oleg Lozovatyi, Thusa Aruvelsanthiran -->
-									</ul>
-							</div>
-					</div>
-
-					<div class="gallery four" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-							<video class="video" preload="auto" muted autoplay loop>
-									<source src="/assets/freelance.mp4" type="video/mp4">
-							</video>
-							
-							<div class="overlay overlay4">
-									<h3>Freelance.me</h3>
-									<h4>Find a freelancer for your next project, and add others to a dynamic database</h4>
-									<ul class="tools">
-											<li><i class="devicons devicons-html5"></i></li>
-											<li><i class="devicons devicons-css3"></i></li>
-											<li><i class="devicons devicons-react"></i></li>
-											<li><i class="devicons devicons-javascript"></i></li>
-											<li><i class="devicons devicons-firebase"></i></li>
-
-									</ul>
-									<ul class="liveLink">
-											<li><a href="#">View Live</a></li>
-											<li><a href="#">View Github</a></li>
-									</ul>
-							</div>
-					</div>
-			</div>
-	</section>
-
-	<section class="progress" id="progress" data-aos="fade-down" data-aos-duration="1000">
-			<h2>Current Projects</h2>
-			<p>As my skills grow, so will this portfolio!</p>
-			<p>Keep checking back for work in progress</p>
-			<div class="gallery-container">
-					<div class="gallery one" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+		<div class="wrapper">
 			
-					<img src="/assets/musicpicnicWIP.png" alt="current state of website for Music Picnic">        
-							<div class="overlay overlayWIP1">
-									<h3>Music Picnic</h3>
-									<h4>Digital Migration and website overhaul for <a href="http://www.musicpicnic.com/">Music Picnic</a></h4>
-									<ul class="tools">
-											<li><i class="devicons devicons-html5"></i></li>
-											<li><i class="devicons devicons-css3"></i></li>
-											<li><i class="devicons devicons-javascript"></i></li>
-											<li><i class="devicons devicons-sass"></i></li>
-									</ul>
-									<ul class="liveLink">
-											<li><a href="https://atinachang.github.io/musicpicnic/">View Live</a></li>
-											<li><a href="https://github.com/atinachang/musicpicnic">View Github</a></li>
-									</ul>
-							</div>
-					</div>
-			</div>
+		<h1>Who is asey?</h1>
 
-	</section>
+		<div class="intro-image" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="3000" >
+		<img src="/assets/memoji.png" alt="an emoji of atina">
+		</div>
+		
+		<h2>Atina is a</h2>
+			<div id="list">
 
-	<section class="highlights" data-aos="fade-down" data-aos-duration="1000">
-			<h2>Skills</h2>
-			<ul class="skills"> 
-					<li><i class="devicons devicons-html5"></i><p>HTML5</p></li>
-					<li><i class="devicons devicons-css3"></i><p>CSS</p></li>
-					<li><i class="devicons devicons-react"></i><p>React</p></li>
-					<li><i class="devicons devicons-sass"></i><p>SCSS</p></li>
-					<li><i class="devicons devicons-javascript"></i><p>JavaScript</p></li>
-					<li><i class="devicons devicons-firebase"></i><p>SQL</p></li>
-					<li><i class="devicons devicons-github_badge"></i><p>Github</p></li>
-					<li><i class="devicons devicons-terminal_badge"></i><p>Terminal</p></li>
-					<li><i class="devicons devicons-responsive"></i><p>Responsive<br>Design</p></li>
-					<li><i class="devicons devicons-jquery"></i><p>Jquery</p></li>
-					<li><i class="devicons devicons-npm"></i><p>NPM</p></li>
-
-			</ul>
-	</section>
-					
-	<section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
-			<h3>Contact me!</h3>
-	<div class="contactInfo">
-			<div class="socialsText">
-					<!-- <p>If you want to have a chat about music, code or which Neopet was the best, hit my line!</p>
-						-->
-					<ul class="socials">
-							<li><a href="https://github.com/atinachang"><i class="fab fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/atinachang/"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="https://www.instagram.com/whoisasey/"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="https://medium.com/@whoisasey"><i class="fab fa-medium"></i></a></li>
-							<li><a href="https://twitter.com/whoisasey"><i class="fab fa-twitter"></i></a></li>
-					</ul>
-			</div>
-			<!-- <div class="contactForm">
-					<form action="http://www.focuspocus.io/magic/d5a7f1c43dadb8db4043866e6781ba65" method="POST">
-							<label for="name" class="sr-only">Your Name</label>
-							<input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" required>
-							<label class="sr-only" for="email">Your Email</label>
-							<input type="email" name="email" id="email" placeholder="Your Email" required>
-							<label class="sr-only" for="message" autocomplete="off">Your Message</label>
-							<textarea name="message" id="message" placeholder="Your Message" required=""></textarea>
-							<input type="submit" value="get in touch &#128232;" >
-					</form>
-			</div> -->
-	</div>
-	</div>
-	</section>
-	<footer>
-			<p>whoisasey &#169; 2020</p>
-	</footer>
-</main>
-
-
+			<h3>
+			<a href="./code/">Web Developer</a>
+			</h3>
+			<h3>
+			<a href="./DJ/">DJ</a>
+			</h3>
+			<!-- <h3>
+			<a href="">Digital & Event Production Coordinator</a>
+			</h3> -->
 			
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+			<div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000">
+				<a href="./about/">Get to know me</a>
+				</div>
+
+			</div>
+		</div>
+
 </body>
-
 </html>

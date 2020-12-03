@@ -1,102 +1,127 @@
-//code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
+// //code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav
 
+// /* The navigation menu */
+// .navbar {
+//     overflow: hidden;
+//     background-color: #333;
+//   }
 
-/* The navigation menu */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+// .sidenav {
+//     height: 100%;
+//     width: 0;
+//     position: fixed;
+//     z-index: 2;
+//     top: 0;
+//     right: 0;
+//     background-color: #111;
+//     overflow-x: hidden;
+//     transition: 0.5s;
+//     padding-top: 60px;
+// }
+
+// .sidenav a {
+//     padding: 8px 8px 8px 32px;
+//     text-decoration: none;
+//     font-size: 25px;
+//     color: #818181;
+//     display: block;
+//     transition: 0.3s;
+//     text-transform: uppercase;
+// }
+
+// .sidenav a:hover {
+//     color: #f1f1f1;
+// }
+
+// .sidenav .closebtn {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     font-size: 3.6rem;
+//     margin-right: 50px;
+// }
+
+// .closebtn {
+//   color: white;
+// }
+// /* The subnavigation menu */
+// .subnav {
+//   overflow: hidden;
+// }
+
+// /* Subnav button */
+// .subnav .subnavbtn {
+//   font-size: 1.6rem;
+//   border: none;
+//   outline: none;
+//   color: white;
+//   background-color: inherit;
+//   font-family: inherit;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// /* Style the subnav content - positioned absolute */
+// .subnav-content {
+//   display: none;
+//   position: absolute;
+//   left: 0;
+//   background-color: #333;
+//   width: 100%;
+//   z-index: 1;
+// }
+
+// /* Style the subnav links */
+// .subnav-content a {
+//   float: left;
+//   color: white;
+//   text-decoration: none;
+// }
+
+// .subnav-content a:hover {
+//   color: grey;
+// }
+// /* When you move the mouse over the subnav container, open the subnav content */
+// .subnav:hover .subnav-content {
+//   display: block;
+// }
+
+// #menu {
+//     transition: margin-right .5s;
+//     }
+
+// .menu {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   font-size:3rem;
+//   cursor:pointer;
+//   padding: 40px;
+//   z-index: 1;
+// }
+
+nav,
+footer {
+	ul {
+		margin: 20px auto;
+		display: flex;
+		justify-content: space-evenly;
+		text-transform: uppercase;
+	}
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.active {
+		text-decoration: underline;
+	}
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    text-transform: uppercase;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 3.6rem;
-    margin-right: 50px;
-}
-
-.closebtn {
-  color: white;
-}
-/* The subnavigation menu */
-.subnav {
-  overflow: hidden;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-  font-size: 1.6rem;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: #333;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: white;
-  text-decoration: none;
-}
-
-.subnav-content a:hover {
-  color: grey;
-}
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
-
-#menu {
-    transition: margin-right .5s;
-    }
-
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size:3rem;
-  cursor:pointer;
-  padding: 40px;
-  z-index: 1;
+footer,
+nav {
+	background-color: whitesmoke;
+	padding: 15px 0;
 }
