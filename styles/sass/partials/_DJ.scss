@@ -1,21 +1,17 @@
-.header-img {
-	width: 60vw;
-	margin: 0 auto;
-	position: relative;
-}
-
-.intro {
-	position: absolute;
-	top: 0;
-	background-color: rgba(255, 255, 255, 0.6);
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 0 50px;
-}
-
 .featured {
+	// padding-top: 50px;
+	padding: 0 50px;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.DJ {
 	padding-top: 50px;
+	background-image: url("../assets/header.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.featured > * {
+	padding: 20px 0;
 }
