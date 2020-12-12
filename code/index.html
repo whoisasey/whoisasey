@@ -26,14 +26,19 @@
 </head>
 
 <body>
-	<nav id="navbar">
-		<ul>
-			<li><a href="../index.html">Home</a></li>
-			<li class="active"><a href="../code/">Code</a></li>
-			<li><a href="../DJ/">DJ</a></li>
-			<li><a href="../BLM/">BLM Resources</a></li>
-		</ul>
-	</nav>
+<header class="header">
+	<input class="menu-btn" type="checkbox" id="menu-btn" />
+	<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+	<ul class="menu">
+		<li><a href="../index.html">Home</a></li>
+		<li class="active"><a href="../code/">Code</a></li>
+		<li><a href="../DJ/">DJ</a></li>
+		<li><a href="../BLM/">BLM Resources</a></li>
+	</ul>
+</header>
+
+<section class="code">
+
 
 	<div class="wrapper ">
 		<h1>client work</h1>
@@ -44,8 +49,8 @@
 			<div class="gallery-item">
 				<h3>newcurrency.ca</h3>
 				<span>Platform (WIP)</span>
-				<div class="gallery-image">
-					<img src="../assets/newcurr.png" />
+				<div class="gallery-image mobile desktop">
+					<img src="../assets/newcurr.png"/>
 					<!-- <video class="video" preload="auto" id="gallery-vid">
 						<source src="../assets/samyang.m4v" type="video/mp4">
 					</video> -->
@@ -69,7 +74,7 @@
 			<div class="gallery-item">
 				<h3>akasamyang.ca</h3>
 				<span>Photography Portfolio for Sam Yang</span>
-				<div class="gallery-image">
+				<div class="gallery-image mobile desktop">
 					<video class="video" preload="auto" id="gallery-vid">
 						<source src="../assets/samyang.m4v" type="video/mp4">
 					</video>
@@ -92,7 +97,7 @@
 			<div class="gallery-item">
 				<h3>Before Our Vows</h3>
 				<span>Wedding Services celebrating African Culture</span>
-				<div class="gallery-image">
+				<div class="gallery-image mobile desktop">
 					<video class="video" preload="auto">
 						<source src="../assets/bovx2.m4v" type="video/mp4">
 					</video>
@@ -113,7 +118,7 @@
 			<div class="gallery-item">
 				<h3>aeijri.com</h3>
 				<span>Photography Portfolio for Adrian Muir</span>
-				<div class="gallery-image">
+				<div class="gallery-image  mobile desktop">
 					<video class="video" preload="auto" >
 						<source src="../assets/aeijri.m4v" type="video/mp4">
 					</video>
@@ -136,7 +141,7 @@
 			<div class="gallery-item">
 				<h3>Music Picnic</h3>
 				<span>Digital Migration and website overhaul protoype for <a href="http://www.musicpicnic.com/">Music Picnic</a></h4>
-				<div class="gallery-image">
+				<div class="gallery-image mobile desktop">
 					<video class="video" preload="auto" >
 						<source src="../assets/music.m4v" type="video/mp4">
 					</video>
@@ -162,7 +167,7 @@
 		<div class="gallery-container"  data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-duration="1500">
 			<div class="gallery-item">
 			
-				<div class="gallery-image">
+				<div class="gallery-image mobile desktop">
 					<h3>Producer Soundboard</h3>
 					<span>Discover your favourite Hip-Hop producers</span>
 					<video class="video" preload="auto">
@@ -185,7 +190,7 @@
 			</div>
 
 			<div class="gallery-item ">
-				<div class="gallery-image">
+				<div class="gallery-image mobile desktop">
 					<h3>App-etite</h3>
 					<span>Less thinking, more eating!</span>
 					<video class="video" preload="auto" muted> 
@@ -260,6 +265,9 @@
 		</div>
 
 	</div>
+
+	</section>
+
 <footer>
 	<ul>
 			<li><a href="../about/">About</a></li>

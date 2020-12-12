@@ -102,10 +102,25 @@
 	// 	}
 }
 @media (max-width: 700px) {
-	ul {
+	header ul {
 		flex-wrap: nowrap;
 		flex-direction: column;
 		text-align: right;
+	}
+
+	.skills {
+		width: 100%;
+		i {
+			@include font-size(1.2);
+		}
+
+		p {
+			display: none;
+		}
+	}
+
+	.about .featured {
+		padding: 50px;
 	}
 	// 	.contactInfo {
 	// 		flex-direction: column;
@@ -116,7 +131,14 @@
 	// 	}
 }
 
-// @media only screen and (max-width: 500px) {
+@media only screen and (min-device-width: 500px) {
+	.mobile {
+		video,
+		img {
+			display: none;
+		}
+	}
+} // @media only screen and (max-width: 500px) {
 // 	.top {
 // 	display: none;
 // 	}
