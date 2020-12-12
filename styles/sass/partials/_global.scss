@@ -82,7 +82,7 @@ section {
 footer {
 	// margin-top: 50px;
 
-	p {
+	a {
 		font-size: 1rem;
 	}
 }
@@ -134,4 +134,9 @@ nav {
 .code,
 .blm {
 	padding: 100px 0;
+}
+
+footer {
+	background-color: whitesmoke;
+	padding: 10px 0;
 }

@@ -120,11 +120,6 @@ footer {
 	}
 }
 
-footer {
-	background-color: whitesmoke;
-	padding: 15px 0;
-}
-
 // hamburger menu - https://codepen.io/mutedblues/pen/MmPNPG
 
 /* header */
@@ -177,7 +172,7 @@ footer {
 
 .header .menu-icon {
 	cursor: pointer;
-	display: inline-block;
+	// display: inline-block;
 	float: right;
 	padding: 28px 20px;
 	position: relative;
