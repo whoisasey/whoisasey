@@ -620,6 +620,20 @@ select {
   text-decoration: underline;
 }
 
+.intro-image {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
 .tools {
   padding: 10px 0;
   -webkit-box-orient: horizontal;
