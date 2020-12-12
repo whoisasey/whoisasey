@@ -1,0 +1,16 @@
+.casestudy {
+	p,
+	a {
+		text-align: initial;
+		padding: 5px 0;
+		@include font-size(0.9);
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	div {
+		padding: 10px 0;
+	}
+}

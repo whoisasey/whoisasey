@@ -362,7 +362,8 @@ nav a {
 }
 
 .code,
-.blm {
+.blm,
+.casestudy {
   padding: 100px 0;
 }
 
@@ -732,6 +733,21 @@ select {
   font-size: 0.75rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.casestudy p,
+.casestudy a {
+  text-align: initial;
+  padding: 5px 0;
+  font-size: 1.35rem;
+}
+
+.casestudy a {
+  text-decoration: underline;
+}
+
+.casestudy div {
+  padding: 10px 0;
 }
 
 .shows {
