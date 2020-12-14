@@ -1,16 +1,37 @@
 .casestudy {
+	.wrapper {
+		background-color: rgba(255, 255, 255, 0.5);
+		width: 70%;
+		padding: 100px 50px;
+	}
 	p,
-	a {
+	span,
+	li {
 		text-align: initial;
-		padding: 5px 0;
-		@include font-size(0.9);
+		padding: 10px 0;
+		@include font-size(1);
 	}
 
+	li {
+		list-style-type: decimal-leading-zero;
+	}
 	a {
 		text-decoration: underline;
 	}
 
 	div {
+		padding: 20px 0;
+	}
+
+	h6 {
+		@include font-size(1);
 		padding: 10px 0;
+	}
+
+	h6,
+	h3,
+	span {
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 }

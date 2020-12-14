@@ -362,8 +362,7 @@ nav a {
 }
 
 .code,
-.blm,
-.casestudy {
+.blm {
   padding: 100px 0;
 }
 
@@ -735,11 +734,22 @@ select {
   text-transform: uppercase;
 }
 
+.casestudy .wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 70%;
+  padding: 100px 50px;
+}
+
 .casestudy p,
-.casestudy a {
+.casestudy span,
+.casestudy li {
   text-align: initial;
-  padding: 5px 0;
-  font-size: 1.35rem;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+
+.casestudy li {
+  list-style-type: decimal-leading-zero;
 }
 
 .casestudy a {
@@ -747,7 +757,19 @@ select {
 }
 
 .casestudy div {
+  padding: 20px 0;
+}
+
+.casestudy h6 {
+  font-size: 1.5rem;
   padding: 10px 0;
+}
+
+.casestudy h6,
+.casestudy h3,
+.casestudy span {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .shows {
