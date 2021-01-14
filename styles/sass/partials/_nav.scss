@@ -16,7 +16,7 @@ footer {
 	}
 
 	.active {
-		text-decoration: underline;
+		font-weight: bold;
 	}
 }
 
@@ -114,7 +114,7 @@ footer {
 }
 
 .header .menu-btn:checked ~ .menu {
-	max-height: 240px;
+	max-height: 490px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
