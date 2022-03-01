@@ -16,6 +16,7 @@ This app is built with MongoDB, Express, React and Node.
 ## What I'm Currently Learning:
 
 - Ruby on Rails
+ - [Alpha Blog](https://github.com/whoisasey/bug-free-octo-fortnight)
 - React/Jest & Ruby Testing
 
 ## Bootcamp projects
