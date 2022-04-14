@@ -19,6 +19,9 @@ This app is built with MongoDB, Express, React and Node.
  - [Alpha Blog](https://github.com/whoisasey/bug-free-octo-fortnight)
 - React/Jest & Ruby Testing
 
+## Other Projects:
+- [My Personal Alcohol Tracking App](https://github.com/whoisasey/tracker)
+
 ## Bootcamp projects
 
 [**Producer Soundboard**](https://github.com/whoisasey/soundboard), interactive soundboard made with soundbytes of Hip-Hop producers. Built with HTML, CSS and jQuery
