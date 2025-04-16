@@ -19,6 +19,7 @@
 
 - [Ellis Don](http://ellisdon.com/): TypeScript, Sanity.io, I18N
 - [Somewherelse Agency Website](https://somewherelse.com/): React, SCSS, Wordpress, Gatsby
+- - [Eddie Alcazar](https://eddiealcazar.com/): jQuery
 - [Puresun Farms COA Page](https://puresunfarms.com/coa): PHP, Laravel, Javascript
 - [Big Builds Website](https://bigbuilds.ca/): React, SCSS, Wordpress, Gatsby
 - [Toronto Nepali Film Festival](https://tnff.ca/): React, Hasura, Gatsby
